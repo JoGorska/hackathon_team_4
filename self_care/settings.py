@@ -37,7 +37,7 @@ development = os.environ.get('DEVELOPMENT', False)
 DEBUG = development
 
 if development:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000']
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'self-care-app-hackathon.herokuapp.com']
 else:
     ALLOWED_HOSTS = ["self-care-app-hackathon.herokuapp.com"]
 
