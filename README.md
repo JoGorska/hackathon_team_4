@@ -46,9 +46,9 @@
 
 # NameUnspecified
 
-[![showpiece home page](link/to/img)](link/to/life/page/)
+[![showpiece home page](link/to/img)](https://self-care-app-hackathon.herokuapp.com/)
 
-Click [here](link/to/live/site) to live site.  
+Click [here](https://self-care-app-hackathon.herokuapp.com/) to live site.  
 
 ## UX
 ------
