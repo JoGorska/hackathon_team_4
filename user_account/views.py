@@ -11,7 +11,7 @@ class RegisterUserView(CreateView):
     class view to register user as a build in User model from django
     """
 
-    template_name = "users/register.html"
+    template_name = "registration/register.html"
     form_class = UserForm
     success_url = reverse_lazy("/")
 
