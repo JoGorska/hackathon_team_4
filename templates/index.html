@@ -6,7 +6,7 @@
 <h1>This is index</h1>
 
 <p>How is your mood today. Choose from drop down box</p>
-<form action="{% url 'mood' %}" method="POST">
+<form action="{% url 'post_mood' %}" method="POST">
     {% csrf_token %}
 {{ mood_form|as_bootstrap }}
 <input type="submit" class="btn btn-warning mt-4">

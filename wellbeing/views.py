@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView
+from django.http import HttpResponseRedirect
 from .models import Mood
 from .forms import MoodForm
 
@@ -27,3 +28,10 @@ class PostMood(CreateView):
 
     def post(self, request, *args, **kwargs):
         mood_form = MoodForm(data=request.POST)
+        if mood_form.is_valid():
+            mood_form.instance.author = request.user.id
+            mood_instance = mood_form.save(comit=False)
+            mood_instance.save()
+        else:
+            mood_form = MoodForm()
+        return HttpResponseRedirect('/')
