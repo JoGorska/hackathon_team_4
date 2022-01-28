@@ -63,6 +63,7 @@ body {
 .options-container {
     background: var(--coral);
     border-radius: 15px;
+    color: var(--font);
 }
 
 .emotion-box {
@@ -100,7 +101,7 @@ body {
 @media screen and (max-width: 576px) {
 
     .navbar-brand {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     .navbar-brand img {
