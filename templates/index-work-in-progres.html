@@ -3,9 +3,20 @@
 {% load bootstrap_tags %}
 {% block content %}
 
+<h1>This is index template</h1>
+
+<h2>How is your mood today. </h2>
 {% if user.is_authenticated %}
 <!-- user authenticated -->
-<div class="header">
+
+<p>Choose from drop down box below</p>
+<form action="{% url 'post_mood' author_id=user.id %}" method="POST">
+    {% csrf_token %}
+{{ mood_form|as_bootstrap }}
+<input type="submit" class="btn btn-warning mt-4">
+</form>
+
+<header class="header">
   <div class="header-overlay d-flex justify-content-center align-items-center">
       <div class="container options-container p-5">
           <div class="row">
@@ -67,7 +78,7 @@
           </div>
       </div>
   </div>
-</div>
+</header>
 
 
 {% else %}
