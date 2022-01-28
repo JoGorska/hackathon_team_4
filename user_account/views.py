@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.views.generic.edit import CreateView
 from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
-from .forms import (UserForm)
+from django.contrib.auth.models import User
+from .forms import UserForm
 
 
 class RegisterUserView(CreateView):
@@ -22,3 +23,12 @@ class RegisterUserView(CreateView):
         )
         login(self.request, new_user)
         return HttpResponseRedirect(self.success_url)
+
+
+class HomeView(CreateView):
+    '''
+
+    '''
+    template_name = 'index.html'
+    form_class = User
+    success_url = 'home'
