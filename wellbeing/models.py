@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 MOOD_CHOICES = [
-    ('unknown', 'Unknown')
+    ('unknown', 'Unknown'),
     ('happy', 'Happy'),
     ('anxious', 'Anxious'),
     ('sad', 'Sad')

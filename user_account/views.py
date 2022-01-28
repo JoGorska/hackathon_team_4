@@ -25,12 +25,3 @@ class RegisterUserView(CreateView):
         login(self.request, new_user)
         return HttpResponseRedirect(self.success_url)
 
-
-class HomeView(CreateView):
-    '''
-
-    '''
-    template_name = 'index.html'
-    model = User
-    form = UserForm
-    success_url = 'home'
