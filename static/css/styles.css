@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: rgba(21, 96, 100, 0.7);
+    --yellow: rgba(248, 225, 108, 0.7);
+    --coral: rgba(251, 143, 103, 0.7);
+    --coral-hex: #FB8F67;
+    --font: #0B3132;
+    --body: 'Spartan', sans-serif;
+}
+
+body {
+    font-family: var(--body);
+}
+
+/* Navbar & header */
+
+.header {
+    height: 100vh;
+    background: url(/static/media/hero-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.header-overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(217deg, var(--blue), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, var(--coral), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, var(--yellow), rgba(0,0,255,0) 70.71%);
+}
+
+.navbar {
+    box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.05);
+    backdrop-filter: blur(5px);
+}
+
+.navbar-nav {
+    font-weight: 500;
+    margin-left: auto;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--font);
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: var(--font);
+}
+
+.navbar-toggler-icon {
+    color: var(--font);
+}
+
+/* User emotion options */
+
+.options-container {
+    background: var(--coral);
+    border-radius: 15px;
+    color: var(--font);
+}
+
+.emotion-box {
+    background-color: var(--coral-hex);
+    border-radius: 15px;
+    width: 23%;
+    box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.05);
+}
+
+.emotion-icon {
+    transform: translateY(-30px);
+    background-color: var(--font);
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .options-container {
+        width: 95% !important;
+        padding: 24px !important;
+        margin-top: 80px;
+    }
+
+    .emotion-box {
+        width: 46% !important;
+        margin-bottom: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .navbar-brand {
+        font-size: 1.4em;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .emotion-icon img {
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+
+
+
