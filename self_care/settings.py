@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'cloudinary',
 
     'user_account',
+    'wellbeing',
 ]
 
 MIDDLEWARE = [
