@@ -3,14 +3,33 @@
 {% load bootstrap_tags %}
 {% block content %}
 
-<h1>This is index</h1>
+<h1>This is index template</h1>
 
-<p>How is your mood today. Choose from drop down box</p>
-<form action="{% url 'post_mood' %}" method="POST">
+<h2>How is your mood today. </h2>
+{% if user.is_authenticated %}
+<!-- user authenticated -->
+
+<p>Choose from drop down box below</p>
+<form action="{% url 'post_mood' author_id=user.id %}" method="POST">
     {% csrf_token %}
 {{ mood_form|as_bootstrap }}
 <input type="submit" class="btn btn-warning mt-4">
 </form>
+
+{% else %}
+<!-- user is not authenticated, links to log in or register -->
+<div class="container pt-3 mt-4 mb-5">
+  <h2>You must log in to access</h2>
+  <p class="pt-3 my-3">
+    Click
+
+    <a href="{% url 'login' %}?next/">here</a>
+    to log in or 
+    <a href="{% url 'user_account:register' %}">here</a>
+    to register
+  </p>
+</div>
+{% endif %}
     
 
 {% endblock %}
