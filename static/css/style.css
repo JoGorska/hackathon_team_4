@@ -205,6 +205,15 @@ form label {
         text-align: center;
     }
 
+    .welcome-user {
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.05);
+        border-radius: 50px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
