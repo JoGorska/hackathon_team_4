@@ -44,20 +44,23 @@ class PostMood(CreateView):
 
 class ClickMood(CreateView):
     '''
+    saves object mood into database and redirects user to page 
+    corresponding with his mood
     '''
     form_class = MoodForm
     template_name = 'index.html'
-    def post(self, request, author_id, mood, *args, **kwargs):
-        print(f'POSTED THE POST REQUEST')
-        mood_form = MoodForm(data=request.POST)
+    def get(self, request, author_id, mood, *args, **kwargs):
         author = get_object_or_404(User, id=author_id)
-        mood_form.instance.author = author
-        mood_form.instance.mood = mood
-        if mood_form.is_valid():
-            print(f'FORM IS VALID')
-            mood_instance = mood_form.save()
+        mood_object = Mood.objects.create(author=author, mood=mood)
+        mood_object.save()
+        if mood_object.mood == 'tired':
+            return render(request, 'tired.html')
+        elif mood_object.mood == 'bored':
+            return render(request, 'bored.html')
+        elif mood_object.mood == 'happy':
+            return render(request, 'happy.html')
+        elif mood_object.mood == 'stressed':
+            return render(request, 'stressed.html')
         else:
-            print(f'FORM IS NOT VALID')
-            mood_form = MoodForm()
             return HttpResponseRedirect("/")
-        return HttpResponseRedirect("/")
+
