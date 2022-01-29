@@ -59,6 +59,50 @@ body {
     align-items: center;
 }
 
+/* Landing page */
+
+.login-or-register {
+    width: 100%;
+}
+
+.login-or-register a {  
+    border-radius: 15px;
+    background-color: var(--font);
+    color: var(--coral-hex);
+    padding: 1em;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    width: 48%;
+    margin-right: 10px;
+}
+
+.login-or-register a:hover {
+    color: var(--coral-hex);
+    transform: translateY(-5px);
+}
+
+.login::after {
+    content: "\f2f6";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
+}
+
+.register::after {
+    content: "\f234";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
+}
+
+.landing-icons img {
+    opacity: 0.5;
+}
+
+.welcome-text {
+    font-size: 2.5em;;
+}
+
 /* User emotion options */
 
 .options-container {
@@ -114,6 +158,7 @@ form label {
     transform: translateY(-5px);
 }
 
+
 /* Login */
 
 .login-container {
@@ -125,7 +170,6 @@ form label {
 .login-container a {
     color: var(--font);
 }
-
 
 /* Footer */
 
@@ -150,6 +194,15 @@ form label {
 
     .nav-link {
         font-weight: 700;
+    }
+
+    .landing-icons {
+        flex-direction: row !important;
+        padding-top: 25px;
+    }
+
+    .welcome-text {
+        text-align: center;
     }
 
 }
@@ -199,8 +252,24 @@ form label {
 
 /*tired.html*/
 
+
+    .login-or-register {
+        flex-direction: column;
+    }
+
+    .login-or-register a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .welcome-text {
+        font-size: 2.2em;
+    }
+
+
 .tips {
     padding-top: 20px;
+
 }
 
 .accordion-button {
