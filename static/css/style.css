@@ -17,8 +17,6 @@ body {
 
 .header {
     height: 100vh;
-    background: url(/static/media/hero-2.jpg) no-repeat center;
-    background-size: cover;
 }
 
 .header-overlay {
