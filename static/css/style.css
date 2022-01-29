@@ -96,7 +96,8 @@ form label {
     border-radius: 50px;
 }
 
-.register-btn {
+.register-btn,
+.login-btn {
     border-radius: 15px;
     background-color: var(--font);
     color: var(--coral-hex);
@@ -105,16 +106,29 @@ form label {
     transition: all 0.2s ease-in-out;
 }
 
-.register-btn:hover {
+.register-btn:hover,
+.login-btn:hover {
     color: var(--coral-hex);
     transform: translateY(-5px);
+}
+
+/* Login */
+
+.login-container {
+    background-color: var(--coral);
+    border-radius: 15px;
+    color: var(--font);
+}
+
+.login-container a {
+    color: var(--font);
 }
 
 
 /* Footer */
 
 .footer {
-    background-color: var(--coral);
+    background-color: var(--coral-hex);
     color: var(--font);
 }
 
