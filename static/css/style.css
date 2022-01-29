@@ -124,6 +124,10 @@ form label {
 
 @media screen and (max-width: 991px) {
 
+    .navbar {
+        background: linear-gradient(90deg, var(--blue), transparent 65%) !important;
+    }
+
     .form-container {
         width: 70%;
     }
