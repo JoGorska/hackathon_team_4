@@ -115,6 +115,27 @@ body {
 
 }
 
+/*tired.html*/
 
+.tips {
+    padding-top: 20px;
+}
+
+.accordion-button {
+    background: var(--coral-hex) !important;
+    box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.05) !important;
+}
+
+.accordion-body {
+    background: var(--coral) !important;            
+}
+
+div.accordion-item {
+    background-color: var(--coral-hex) !important;
+}
+
+[type=button]:not(:disabled), .accordion-button::after {
+    color: var(--font) !important;
+}
 
 
