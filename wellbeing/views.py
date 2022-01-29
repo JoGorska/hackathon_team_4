@@ -40,3 +40,24 @@ class PostMood(CreateView):
         else:
             mood_form = MoodForm()
         return HttpResponseRedirect("/")
+
+
+class ClickMood(CreateView):
+    '''
+    '''
+    form_class = MoodForm
+    template_name = 'index.html'
+    def post(self, request, author_id, mood, *args, **kwargs):
+        print(f'POSTED THE POST REQUEST')
+        mood_form = MoodForm(data=request.POST)
+        author = get_object_or_404(User, id=author_id)
+        mood_form.instance.author = author
+        mood_form.instance.mood = mood
+        if mood_form.is_valid():
+            print(f'FORM IS VALID')
+            mood_instance = mood_form.save()
+        else:
+            print(f'FORM IS NOT VALID')
+            mood_form = MoodForm()
+            return HttpResponseRedirect("/")
+        return HttpResponseRedirect("/")
