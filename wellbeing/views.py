@@ -44,14 +44,14 @@ class PostMood(CreateView):
         return HttpResponseRedirect("/")
 
 
-
 class ClickMood(CreateView):
     '''
-    saves object mood into database and redirects user to page 
+    saves object mood into database and redirects user to page
     corresponding with his mood
     '''
     form_class = MoodForm
     template_name = 'index.html'
+
     def get(self, request, author_id, mood, *args, **kwargs):
         author = get_object_or_404(User, id=author_id)
         mood_object = Mood.objects.create(author=author, mood=mood)
@@ -66,4 +66,3 @@ class ClickMood(CreateView):
             return render(request, 'stressed.html')
         else:
             return HttpResponseRedirect("/")
-
