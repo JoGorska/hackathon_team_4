@@ -2,20 +2,98 @@
 {% load static %}
 {% load bootstrap_tags %}
 {% block content %}
+<!-- Header div and header-overlay from Lydia to add page background -->
 <div class="header">
-    <div class="header-overlay d-flex justify-content-center align-items-center">
-        <div class="container options-container p-5">
-            <div class="row">
-                <div class="col-12">
-                   <h2>Sleep</h2>
-                   <P>Introduction text</P>
-                   
-                </div>
+    <div class="header-overlay d-flex flex-column align-items-center">
+      <!-- Spacer div to push registration form below navbar -->
+      <div class="spacer py-5"></div>
+
+      <div class="container options-container p-5">
+        <div class="row">
+            <div class="col-12">
+           <h2>Sleep</h2>
+           <P>Introduction text</P>
             </div>
-            <div class="row d-flex justify-content-evenly mt-5">
+            <div class="col-12">
+            <h3>4-7-8 Sleep Technique</h3>
+        </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is it? 
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The 4-7-8 breathing technique developed by Dr. Andrew Weil is based on an ancient yogic technique called pranayama.  If you’re not into meditation or yoga, don’t worry, this technique is for everyone.  You don’t have to listen to soothing voices to try to get you to sleep this is something you can do on your own. 
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How does it work? 
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Breathing techniques are designed to bring the body into a state of deep relaxation. Patterns of holding your breath allow your body to replenish its oxygen, giving your organs and tissues a much-needed oxygen boost.   This practice can also help to balance the body and regulate the fight-or-flight response we feel when we’re stressed.  Lack of sleep can often centre around anxiety or worries about what happened today or what might happen tomorrow.  This can keep us from getting a well needed rest.   Instead of focusing your worries this technique will help you focus on breathing.  
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How do you do it? 
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>This breathing technique shouldn’t be practiced in a setting where you’re not prepared to fully relax. While it doesn’t necessarily have to be used for falling asleep, it can still put the practitioner into a state of deep relaxation. Make sure you don’t need to be fully alert immediately after practicing your breathing cycles.</p>
+                        <p>If you’re not already in bed find a place to sit or lie down comfortably. </p>
+                    <p>Rest the tip of your tongue against the roof of your mouth, right behind your top front teeth. You’ll need to keep your tongue in place throughout the practice. Some people find that when they purse their lips it can be easier to exhale. </p>
+                <p>The following steps should all be carried out in the cycle of one breath:
+                        <ol>
+                            <li>First, let your lips part. Make a whooshing sound,
+                                exhaling completely through your mouth.
+                                </li>
+                            <li>Next, close your lips, inhaling silently through your
+                                nose as you count to four in your head.
+                                </li>
+                            <li>Then, for seven seconds, hold your breath.  This is the most important part of this exercise. </li>
+                            <li>Make another whooshing exhale from your mouth for eight
+                                seconds.
+                                </li>
+                        </ol></p>
+                        <p>When you inhale again, you initiate a new cycle of breath. Practice this pattern for four full breaths.
+                        It is recommended that you only practice 4-7-8 breathing for four breaths when you’re first starting out. You can gradually work your way up to eight full breaths.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            
+            <div class="col-12 tips">
+            <h3>Tips for a better night's sleep</h3>
+            <p>Sleep is crucial for mental and physical wellbeing.  Not getting enough will impact your ability to cope with stress.  </p>
+            <ol>
+     
+                <li>The bed is only for sleeping.  Avoid using it as a place for studying, reading, eating or watching TV.  Keep the bedroom well-ventilated, not too hot or too cold.</li>
+                <li>Aim to got to sleep and wake up at the same time every day, even at the weekend.  Don’t try to make up your sleep with naps or lie-ins.</li>
+                <li>Exercise a little each day but avoid doing anything strenuous before bed-time or your heart rate will be raised too much to relax.</li>
+                <li>Avoid caffeine and other stimulants from the afternoon and at night.  Try chamomile tea or warm milk before bed.</li>
+                <li>Wind-down before you go to bed.  Take a bath, sprinkle some lavender on your pillow, listen to soft music, and avoid screens – no scrolling through the phone in bed.  Try not to do anything that causes stress at bed-time.  </li>
+                <li>Make the best of the light – allow unlight into the room in the morning to get the body ready for the day; keep the lights dim at night and avoid device screen light (phones/tablets), which will prevent sleep. </li>
+                <li>Avoid eating heavy meals late in the evening, especially anything high in sugar or saturated fat. </li>
+                <li>Keep to a normal routine – Try to get up and go to bed at the same time you usually do.  This will help maintain your energy and focus. </li>
+                <li>Make the most of natural light each day – darkness can impact our mood.  Get up early and make sure to see the daylight. </li>
+            </ol>
             </div>
         </div>
-    </div>
-</div>
+
+    </div> 
+</div>       
 {% endblock %}
 
