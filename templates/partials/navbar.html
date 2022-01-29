@@ -17,12 +17,11 @@
         <!-- user -->
         {% if user.is_authenticated %}
         <!-- drop down for user that is logged in -->
-<<<<<<< HEAD
-=======
+
         <li class="nav-item">
         <div class="nav-link">{{user.first_name}}</div> 
       </li>
->>>>>>> 5748bad56ab5f6f643e03dab0b666e6e7e6393f8
+
         <li class="nav-item">
           <a class="nav-link" href="{% url 'logout' %}">Logout</a>
         </li>
