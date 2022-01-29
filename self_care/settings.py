@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 development = os.environ.get('DEVELOPMENT', False)
 
-DEBUG = development
+DEBUG = False
 
 if development:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'self-care-app-hackathon.herokuapp.com']
