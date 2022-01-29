@@ -1,29 +1,60 @@
 {% block content %}
 <nav class="navbar navbar-expand-lg fixed-top p-2">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-          <img src="/static/media/logo-option-2.png" alt="Relaxation" height=60 width=60>
-          project name
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-            <i class="fas fa-ellipsis-h fa-lg"></i>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Link 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 3</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/static/media/logo-option-2.png" alt="Relaxation" height=60 width=60>
+      project name
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fas fa-ellipsis-h fa-lg">
+        </i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Link 1
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2
+          </a>
+        </li>
+        <li class="nav-item">
+          <!-- user -->
+          {% if user.is_authenticated %}
+          <!-- drop down for user that is logged in -->
+          <ul class="nav-link dropdown-menu text-small text-dark" aria-labelledby="User-authenticated">
+            {{user.first_name}}
+            <li>
+              <a class="dropdown-item" href="{% url 'logout' %}">Logout
+              </a>
+            </li>
+            <li>
+            </li>
+            {% else %}
+            <ul class="dropdown-menu text-small text-dark" aria-labelledby="User-not-authenticated">
+              Login
+              <li>
+                <a class="dropdown-item" href="{% url 'user_account:register' %}">Register
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="{% url 'login' %}">Log in
+                </a>
+              </li>
+              {% endif %}
+              </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'logout' %}">Logout
+              </a>
+            </li>
+          </ul>
+        </div>
     </div>
-  </nav>
-
-{% endblock %}
+    </nav>
+  {% endblock %}
+​
+Beautify Code
+Copyright @ Duplex.com
