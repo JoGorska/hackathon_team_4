@@ -20,10 +20,11 @@ class Mood(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name="mood")
     mood = models.CharField(max_length=200, choices=MOOD_CHOICES,
-                              default='unknown')
+                            default='unknown')
+
 
 class Meta:
-        ordering = ['-created_on']
+    ordering = ['-created_on']
 
-def __str__(self):
-    return(f'Mood on {self.created_on} is {self.mood}')
+    def __str__(self):
+        return f'Mood on {self.created_on} is {self.mood}'

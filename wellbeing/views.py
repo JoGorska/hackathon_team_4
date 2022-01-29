@@ -8,23 +8,25 @@ from .forms import MoodForm
 
 class HomeView(CreateView):
     '''
-    
+
     '''
     template_name = 'templates/index.html'
     form_class = MoodForm
+
     def get(self, request, *args, **kwargs):
 
         context = {
             'mood_form': MoodForm,
         }
         return render(request, 'index.html', context)
+
     def post(self, request, *args, **kwargs):
         form = MoodForm()
 
 
 class PostMood(CreateView):
     '''
-    
+
     '''
     template_name = 'index.html'
     form_class = MoodForm
@@ -40,3 +42,27 @@ class PostMood(CreateView):
         else:
             mood_form = MoodForm()
         return HttpResponseRedirect("/")
+
+
+def get_tired_page(request):
+    """ View to return tired page """
+
+    return render(request, 'tired.html')
+
+
+def get_bored_page(request):
+    """ View to return bored page """
+
+    return render(request, 'bored.html')
+
+
+def get_happy_page(request):
+    """ View to return happy page """
+
+    return render(request, 'happy.html')
+
+
+def get_stressed_page(request):
+    """ View to return stressed page """
+
+    return render(request, 'stressed.html')
