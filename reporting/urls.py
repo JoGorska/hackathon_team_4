@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
 
-    path('reporting/datepicker', views.DatePicker.as_view(), name='date_picker'),
-    path('reporting/<slug:date_start>/<slug:date_end>', views.ReportMoodView.as_view(), name='report_mood'),
+    path('datepicker', views.DatePickerView.as_view(), name='date_picker'),
+    # path('report_mood', views.ReportMoodView.as_view(), name='report_mood'),
 ]

@@ -1,6 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
 
-
-<form action="{% url 'report_mood' %}" method="POST">
+{% block content %}
+<div class="header">
+  <div class="header-overlay d-flex justify-content-center align-items-center">
+    <div class="container options-container p-5">
+<form action="#" method="POST">
     {% csrf_token %}
     <!-- form gets pre filled with start address and geocoorinates -->
     <div class="row">
@@ -32,3 +37,7 @@
       </button>
     </div>
   </form> 
+</div>
+</div>
+</div>
+  {% endblock %}
