@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap_tags %}
+{% block content %}
+
+{% if user.is_authenticated %}
+<!-- user authenticated -->
+<div class="header">
+  <div class="header-overlay d-flex justify-content-center align-items-center">
+      <div class="container options-container p-5">
+          <div class="row">
+              <div class="col-12">
+                  <h1>Hi. Take a deep breath.</h1>
+                  <p class="fw-bold">How do you feel today?</p>
+              </div>
+          </div>
+          <div class="row d-flex justify-content-evenly mt-5">
+
+              <!--Tired-->
+              <div class="col-sm-6 col-lg-3 p-4 pt-0 emotion-box" id="emotion-box__tired">
+                  <div class="emotion-box-img d-flex justify-content-center">
+                      <div class="emotion-icon p-4">
+                          <img src="/static/media/sleep.png" width=60 height=60>
+                      </div>
+                  </div>
+                  <div class="text-center w-100">
+                      <p class="fw-bold fs-5">Tired</p>
+                  </div>
+              </div>
+
+              <!--Bored-->
+              <div class="col-sm-6 col-lg-3 p-4 pt-0 emotion-box" id="emotion-box__bored">
+                  <div class="emotion-box-img d-flex justify-content-center">
+                      <div class="emotion-icon p-4">
+                          <img src="/static/media/bored.png" width=60 height=60>
+                      </div>
+                  </div>
+                  <div class="text-center w-100">
+                      <p class="fw-bold fs-5">Bored</p>
+                  </div>
+              </div>
+
+              <!--Happy-->
+              <div class="col-sm-6 col-lg-3 p-4 pt-0 emotion-box" id="emotion-box__happy">
+                  <div class="emotion-box-img d-flex justify-content-center">
+                      <div class="emotion-icon p-4">
+                          <img src="/static/media/happy.png" width=60 height=60>
+                      </div>
+                  </div>
+                  <div class="text-center w-100">
+                      <p class="fw-bold fs-5">Happy</p>
+                  </div>
+              </div>
+
+              <!--Stressed-->
+              <div class="col-sm-6 col-lg-3 p-4 pt-0 emotion-box" id="emotion-box__stressed">
+                  <div class="emotion-box-img d-flex justify-content-center">
+                      <div class="emotion-icon p-4">
+                          <img src="/static/media/redness.png" width=60 height=60>
+                      </div>
+                  </div>
+                  <div class="text-center w-100">
+                      <p class="fw-bold fs-5">Stressed</p>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+{% else %}
+<!-- user is not authenticated, links to log in or register -->
+<div class="container pt-3 mt-4 mb-5">
+  <h2>You must log in to access</h2>
+  <p class="pt-3 my-3">
+    Click
+
+    <a href="{% url 'login' %}?next/">here</a>
+    to log in or 
+    <a href="{% url 'user_account:register' %}">here</a>
+    to register
+  </p>
+</div>
+{% endif %}
+    
+
+{% endblock %}
