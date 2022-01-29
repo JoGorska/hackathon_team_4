@@ -55,6 +55,8 @@ body {
 
 .navbar-toggler-icon {
     color: var(--font);
+    display: flex;
+    align-items: center;
 }
 
 /* User emotion options */
@@ -194,6 +196,7 @@ form label {
         width: 95% !important;
     }
 
+<<<<<<< HEAD
 }
 
 /*tired.html*/
@@ -219,6 +222,8 @@ div.accordion-item {
 
 [type=button]:not(:disabled), .accordion-button::after {
     color: var(--font) !important;
+=======
+>>>>>>> 5748bad56ab5f6f643e03dab0b666e6e7e6393f8
 }
 
 
