@@ -21,6 +21,7 @@ body {
 }
 
 .header-overlay {
+    padding: 20px 0;
     height: 100%;
     width: 100%;
     background: linear-gradient(217deg, var(--blue), rgba(255,0,0,0) 70.71%),
@@ -219,6 +220,10 @@ form label {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
+    }
+
+    .header {
+        height: 100vh;
     }
 
 }
