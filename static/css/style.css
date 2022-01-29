@@ -78,6 +78,79 @@ body {
     border-radius: 50%;
 }
 
+/* Register */
+
+.form-container {
+    background-color: var(--coral);
+    border-radius: 15px;
+    width: 40%;
+}
+
+form label {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.register-btn,
+.login-btn {
+    border-radius: 15px;
+    background-color: var(--font);
+    color: var(--coral-hex);
+    padding: 1em;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+
+.register-btn:hover,
+.login-btn:hover {
+    color: var(--coral-hex);
+    transform: translateY(-5px);
+}
+
+/* Login */
+
+.login-container {
+    background-color: var(--coral);
+    border-radius: 15px;
+    color: var(--font);
+}
+
+.login-container a {
+    color: var(--font);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--coral-hex);
+    color: var(--font);
+}
+
+.footer a {
+    color: var(--font);
+}
+
+@media screen and (max-width: 991px) {
+
+    .navbar {
+        background: linear-gradient(90deg, var(--blue), transparent 65%) !important;
+    }
+
+    .form-container {
+        width: 70%;
+    }
+
+    .nav-link {
+        font-weight: 700;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
     
@@ -111,6 +184,14 @@ body {
     .emotion-icon img {
         height: 40px;
         width: 40px;
+    }
+
+    .footer {
+        font-size: 2.6vw;
+    }
+
+    .form-container {
+        width: 95% !important;
     }
 
 }
