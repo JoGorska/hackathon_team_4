@@ -2,11 +2,15 @@ from django.db import models
 from django.contrib.auth.models import User
 
 MOOD_CHOICES = [
+    ('tired', 'Tired'),
+    ('bored', 'Bored'),
+    ('stressed', 'Stressed'),
     ('unknown', 'Unknown'),
     ('happy', 'Happy'),
     ('anxious', 'Anxious'),
     ('sad', 'Sad')
 ]
+
 
 class Mood(models.Model):
     '''
