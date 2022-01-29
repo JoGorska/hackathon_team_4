@@ -2,26 +2,41 @@
 {% load static %}
 {% load bootstrap_tags %}
 {% block content %}
-<div class="container my-3">
-  <h1 class="display-5 fw-bold lh-1 ">
-    <span class="border-warning pb-3 border-bottom">Login
-    </span>
-  </h1>
-</div>
-<div class="container pt-3 mt-4 mb-5">
-  <h2 class="">You must be logged in to access .....
-  </h2>
-</div>
-<form action="{% url 'login' %}" method="POST">
-  {% csrf_token %}
-  <div class="container ">
-    {{ form|as_bootstrap }}
-    <input type="submit" value="login" class="btn btn-warning mt-4">
-    <p class="mt-3">Not registered yet? 
-      <a href="{% url 'user_account:register' %} "> Register here
-      </a>
-    </p>
+
+<!-- Header div and header-overlay from Lydia to add page background -->
+<div class="header">
+  <div class="header-overlay d-flex flex-column align-items-center">
+    <!-- Spacer div to push registration form below navbar -->
+    <div class="spacer py-5"></div>
+
+      <div class="login-container my-auto p-3">
+        <div class="container pt-4">
+          <h1 class="display-5 fw-bold lh-1 ">
+            <span class="border-warning pb-3 border-bottom">Login
+            </span>
+          </h1>
+        </div>
+        <div class="container pt-3 mt-4 mb-5">
+          <h2 class="fs-3">
+            You must be logged in to access .....
+          </h2>
+        </div>
+        <form action="{% url 'login' %}" method="POST">
+          {% csrf_token %}
+          <div class="container ">
+            {{ form|as_bootstrap }}
+            <input type="submit" value="login" class="btn login-btn w-100 text-capitalize mt-4">
+            <p class="mt-3">Not registered yet? 
+              <a href="{% url 'user_account:register' %} " class="fw-bold"> Register here
+              </a>
+            </p>
+          </div>
+          <input type="hidden" name="next" value="{{ next }}" />
+        </form>
+      </div>
+
   </div>
-  <input type="hidden" name="next" value="{{ next }}" />
-</form>
+</div>
+
+
 {% endblock content %}
