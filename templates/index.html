@@ -17,11 +17,13 @@
             <div class="row d-flex justify-content-evenly mt-5">
 
                 <!--Tired-->
-                <a href="{% url 'click_mood' author_id=user.id mood='tired' %}">
+
                 <div class="col-sm-6 col-lg-3 p-4 pt-0 emotion-box" id="emotion-box__tired">
                     <div class="emotion-box-img d-flex justify-content-center">
                         <div class="emotion-icon p-4">
+                            <a href="{% url 'click_mood' author_id=user.id mood='tired' %}">
                             <img src="{% static 'media/sleep.png' %}" width=60 height=60>
+                            </a>
                         </div>
                     </div>
                     <div class="text-center w-100">
@@ -30,10 +32,13 @@
                 </div>
                 </a>
                 <!--Bored-->
+
                 <div class="col-sm-6 col-lg-3 p-4 pt-0 emotion-box" id="emotion-box__bored">
                     <div class="emotion-box-img d-flex justify-content-center">
                         <div class="emotion-icon p-4">
+                            <a href="{% url 'click_mood' author_id=user.id mood='bored' %}">
                             <img src="{% static 'media/bored.png' %}" width=60 height=60>
+                            </a>
                         </div>
                     </div>
                     <div class="text-center w-100">
@@ -45,7 +50,9 @@
                 <div class="col-sm-6 col-lg-3 p-4 pt-0 emotion-box" id="emotion-box__happy">
                     <div class="emotion-box-img d-flex justify-content-center">
                         <div class="emotion-icon p-4">
+                            <a href="{% url 'click_mood' author_id=user.id mood='happy' %}">
                             <img src="{% static 'media/happy.png' %}" width=60 height=60>
+                            </a>
                         </div>
                     </div>
                     <div class="text-center w-100">
@@ -57,7 +64,9 @@
                 <div class="col-sm-6 col-lg-3 p-4 pt-0 emotion-box" id="emotion-box__stressed">
                     <div class="emotion-box-img d-flex justify-content-center">
                         <div class="emotion-icon p-4">
+                            <a href="{% url 'click_mood' author_id=user.id mood='stressed' %}">
                             <img src="{% static 'media/redness.png' %}" width=60 height=60>
+                            </a>
                         </div>
                     </div>
                     <div class="text-center w-100">

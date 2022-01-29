@@ -8,23 +8,25 @@ from .forms import MoodForm
 
 class HomeView(CreateView):
     '''
-    
+
     '''
     template_name = 'templates/index.html'
     form_class = MoodForm
+
     def get(self, request, *args, **kwargs):
 
         context = {
             'mood_form': MoodForm,
         }
         return render(request, 'index.html', context)
+
     def post(self, request, *args, **kwargs):
         form = MoodForm()
 
 
 class PostMood(CreateView):
     '''
-    
+
     '''
     template_name = 'index.html'
     form_class = MoodForm
@@ -40,6 +42,7 @@ class PostMood(CreateView):
         else:
             mood_form = MoodForm()
         return HttpResponseRedirect("/")
+
 
 
 class ClickMood(CreateView):
