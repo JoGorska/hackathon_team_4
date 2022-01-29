@@ -25,6 +25,10 @@
           {% csrf_token %}
           <div class="container ">
             {{ form|as_bootstrap }}
+            <span>
+              <i class="fas fa-lock d-inline" id="toggle-password" data-bs-target="id_password"></i> 
+              <p class="fw-bold small d-inline">Toggle password</p>
+            </span>
             <input type="submit" value="login" class="btn login-btn w-100 text-capitalize mt-4">
             <p class="mt-3">Not registered yet? 
               <a href="{% url 'user_account:register' %} " class="fw-bold"> Register here
