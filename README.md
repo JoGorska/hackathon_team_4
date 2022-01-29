@@ -352,12 +352,15 @@ pip3 install -r requirements.txt
 
 ## Credits 
 ### Online resources
+* [Google Fonts]()
 * [Icons8](https://icons8.com/)
+* [Flaticon](https://www.flaticon.com/)
 * [unsplash](https://unsplash.com/)
 * [Fontawsome](https://fontawesome.com/)
 * [Bootstrap 5]()
 * [Markdown best practices](https://www.markdownguide.org/basic-syntax/)
 * [Markdown Table of content generator](http://ecotrust-canada.github.io/markdown-toc/)
+* [How to do typewriter font](https://www.w3schools.com/howto/howto_js_typewriter.asp)
 
 ### Tutorials and inspiration
 
