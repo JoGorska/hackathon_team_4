@@ -127,7 +127,9 @@ body {
 }
 
 .accordion-body {
-    background: var(--coral) !important;            
+    background-color: var(--coral) !important;     
+    color: var(--font);    
+      
 }
 
 div.accordion-item {
