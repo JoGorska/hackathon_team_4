@@ -55,6 +55,8 @@ body {
 
 .navbar-toggler-icon {
     color: var(--font);
+    display: flex;
+    align-items: center;
 }
 
 /* User emotion options */
@@ -144,6 +146,10 @@ form label {
 
     .form-container {
         width: 70%;
+    }
+
+    .nav-link {
+        font-weight: 700;
     }
 
 }
