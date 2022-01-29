@@ -223,11 +223,7 @@ form label {
     }
 
     .header {
-        height: auto;
-    }
-
-    .header-overlay {
-        height: auto;
+        height: 100vh;
     }
 
 }
