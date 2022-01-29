@@ -288,12 +288,6 @@ form label {
         font-size: 2.2em;
     }
 
-
-.tips {
-    padding-top: 20px;
-
-}
-
 .accordion-button {
     background: var(--coral-hex) !important;
     box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.05) !important;
@@ -302,11 +296,7 @@ form label {
 .accordion-body {
     background-color: var(--coral) !important;     
     color: var(--font);    
-      
-}
-
-div.accordion-item {
-    background-color: var(--coral-hex) !important;
+    box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.05);
 }
 
 [type=button]:not(:disabled), .accordion-button::after {
