@@ -1,39 +1,50 @@
 /* Script for bored.html flip game */
 
+var logoptio2url = logoptio2url
+
+var bored_dark_url = bored_dark_url 
+var bored_url = bored_url 
+var happy_dark_url = happy_dark_url
+var happy_url = happy_url
+var redness_dark_url = redness_dark_url
+var redness_url = redness_url
+var sleep_dark_url = sleep_dark_url
+var sleep_url = sleep_url
+
 document.addEventListener('DOMContentLoaded', () =>{
 
     //load all card options
     const allCardsArray = [{
         name: 'Bored',
-        img: "{% static 'media/100x100/bored.png' %}"
+        img: bored_url
     },
     {
         name: 'Bored - Dark',
-        img: "{% static 'media/100x100/bored-dark.png' %}"
+        img: bored_dark_url 
     },
     {
         name: 'Happy',
-        img: "{% static 'media/100x100/happy.png' %}"
+        img: happy_url
     },
     {
         name: 'Happy - Dark',
-        img: "{% static 'media/100x100/happy-dark.png' %}"
+        img: happy_dark_url
     },
     {
         name: 'Redness',
-        img: "{% static 'media/100x100/redness.png' %}"
+        img: redness_url
     },
     {
         name: 'Redness - Dark',
-        img: "{% static 'media/100x100/redness-dark.png' %}"
+        img: redness_dark_url
     },
     {
         name: 'Sleep',
-        img: "{% static 'media/100x100/sleep.png' %}"
+        img: sleep_url
     },
     {
         name: 'Sleep - Dark',
-        img: "{% static 'media/100x100/sleep-dark.png' %}"
+        img: sleep_dark_url
     }
     ];
   
@@ -71,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         for (let i=0; i<allCardsArray.length; i++)
         {
             var card = document.createElement('img')
-            card.setAttribute('src',"{% static 'media/100x100/logo-option-2.png' %}")
+            card.setAttribute('src', logoptio2url)
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -88,8 +99,8 @@ document.addEventListener('DOMContentLoaded', () =>{
   
         if(cardOneId === cardTwoId){
             alert('You have selected the same card twice, please only select different cards for matching!')
-              cards[cardOneId].setAttribute('src', "{% static 'media/100x100/logo-option-2.png' %}")
-              cards[cardTwoId].setAttribute('src', "{% static 'media/100x100/logo-option-2.png' %}")
+              cards[cardOneId].setAttribute('src', logoptio2url)
+              cards[cardTwoId].setAttribute('src', logoptio2url)
             }
   
         if (cardsToCompare[0] === cardsToCompare[1] && cardOneId != cardTwoId ) {
@@ -101,8 +112,8 @@ document.addEventListener('DOMContentLoaded', () =>{
             matches++; 
         }
         else {
-          cards[cardOneId].setAttribute('src', "{% static 'media/100x100/logo-option-2.png' %}")
-          cards[cardTwoId].setAttribute('src', "{% static 'media/100x100/logo-option-2.png' %}")
+          cards[cardOneId].setAttribute('src', logoptio2url)
+          cards[cardTwoId].setAttribute('src', logoptio2url)
         }
         cardsToCompare = []
         cardsToCompareId = []
