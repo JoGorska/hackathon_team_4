@@ -420,8 +420,12 @@ img.head-image-bottom {
     transform: scale(0.9);
   }
 
-  45% {
+  40% {
     transform: scale(1.4);
+  }
+
+  95% {
+    transform: scale(0.9);
   }
 
   100% {
