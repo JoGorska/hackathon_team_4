@@ -324,7 +324,9 @@ img.head-image-middle {
 img.head-image-bottom {
     vertical-align: bottom;
 }
-
+#box-outline {
+    border-color: var(--coral) !important;
+}
 
 
 
@@ -397,6 +399,10 @@ img.head-image-bottom {
     margin-left: 5%;
     width: 180px;
   }
+
+#eye-match-header {
+    text-align: center !important;
+}
 
 
 /* Breathing */
