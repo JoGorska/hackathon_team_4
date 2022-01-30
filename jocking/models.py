@@ -8,7 +8,7 @@ class Jocke(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name="jocke")
     created_on = models.DateTimeField(auto_now=True)
-    headline = models.CharField(max_length=200, unique=False)
+    headline = models.TextField()
     punch_line = models.TextField()
     eyes = models.ManyToManyField(User, related_name='thanks', blank=True)
 
