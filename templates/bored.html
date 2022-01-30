@@ -2,20 +2,56 @@
 {% load static %}
 {% load bootstrap_tags %}
 {% block content %}
-<div class="header">
-    <div class="header-overlay d-flex justify-content-center align-items-center">
+<!-- Page-overlay from Lydia to add page background -->
+<div>
+    <div class="page-overlay d-flex flex-column align-items-center">
+        <!-- Spacer div to push registration form below navbar -->
+        <div class="spacer py-5"></div>
         <div class="container options-container p-5">
             <div class="row">
                 <div class="col-12">
-                   <h2>Bored</h2>
-                   <P>Introduction text</P>
-                   
+                    <h2>Bored</h2>
+                    <P>Traditionally, boredom gets a bad rap because many people believe that the state of boredom
+                        equates with a lack of productivity or focus on a given task.
+
+                        However, some research has indicated that it is good to be bored because this state helps boost
+                        creativity.
+
+                        One way or the other, boredom is something we all have experienced repeatedly throughout our
+                        lives, and according to some research, it seems that animals might share this experience with
+                        us, too.
+                    </P>
+                    <div class="col-12 tips">
+                        <h3>Embrace the Boredom!</h3>
+                        <ol>
+                            <li>Acknowledge the feeling of boredom. Boredom is the feeling that has arisen, so accept it
+                                in this moment.</li>
+                            <li>Notice the thoughts running through your mind. Perhaps, "Ohhhh, I can't be bothered!" or
+                                "What is the point of doing this?"</li>
+                            <li>Get interested in boredom. Allow yourself to become curious. Where did the boredom come
+                                from? Where's it going? Can you feel boredom in certain parts of your body? </li>
+                            <li>Connect your attention to the sensations of breathing and see what happens to boredom.
+                            </li>
+                            <li>Try not to fear boredom when it hits you. Instead of saying "I'm bored" when you are
+                                stuck in traffic, put some music on and allow your mind to wander.
+                            <li>If you have children, let them be bored too. Allow their imaginations to run free and be
+                                creative</li>
+                        </ol>
+                    </div>
+
+                </div>
+                <div class="col-12 tips">
+                    <h3>If all else fails, try our game below</h3>
+                </div>
+                <div class="col-12">
+                    Game here
                 </div>
             </div>
-            <div class="row d-flex justify-content-evenly mt-5">
-            </div>
+        </div>
+        <div class="row d-flex justify-content-evenly mt-5">
         </div>
     </div>
+</div>
 </div>
 {% endblock %}
 
