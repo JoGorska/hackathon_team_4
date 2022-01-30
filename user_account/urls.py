@@ -10,7 +10,7 @@ APP_NAME = "user_account"
 urlpatterns = [
     path(
         "login",
-        auth_views.LoginView.as_view(template_name="user_account/login.html"),
+        auth_views.LoginView.as_view(template_name="registration/login.html"),
         name="login",
     ),
     path("register", views.RegisterUserView.as_view(), name="register"),
