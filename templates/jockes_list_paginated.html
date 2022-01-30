@@ -1,17 +1,32 @@
+
+{% extends "base.html" %}
 {% load static %}
+{% load bootstrap_tags %}
+{% block content %}
+
+
+
+<div>
+  <div class="page-overlay d-flex justify-content-center align-items-center">
+      <div class="container options-container p-5">
+          <div class="row">
+              <div class="col-12">
+                  <h1>Time for a Jocke</h1>
+
+              </div>
 <div class="container pt-3">
   <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3">
     <!-- forloop to display all messages in the database -->
-    {% for trafficmessage in trafficmessage_list %}
+    {% for jocke in jockes_list %}
     <div class="col mt-1 mb-3">
       <div class="card border-warning shadow-lg">
         <!-- card header -->
-        {% include 'partials/traffic_msg_header.html' %}
+        {% include 'partials/jockes_header.html' %}
         <!-- card body -->
         <div class="card-body">
           <!-- Modal Trigger -->
-          <div  class="" data-bs-toggle="modal" data-bs-target="#id-modal-{{trafficmessage.id}}" data-bs-show="true">
-            <p class="card-text fs-5 text">{{trafficmessage.area}} in {{trafficmessage.county}} (more)
+          <div  class="" data-bs-toggle="modal" data-bs-target="#id-modal-{{jocke.id}}" data-bs-show="true">
+            <p class="card-text fs-5 text">{{jocke.headline}}
             </p>
           </div>
         </div>
@@ -44,5 +59,7 @@
   </nav>
   {% endif %}
 </div>
-<!-- traffic message modal -->
-{% include 'partials/traffic_msg_modal.html' %}
+<!-- jocke  modal -->
+{% include 'partials/jockes_modal.html' %}
+
+
