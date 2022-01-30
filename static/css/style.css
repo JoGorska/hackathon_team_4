@@ -318,7 +318,10 @@ form label {
 [type=button]:not(:disabled), .button-header::after {
     color: var(--font) !important;
 }
-img.head-image {
+img.head-image-middle {
+    vertical-align: middle;
+}
+img.head-image-bottom {
     vertical-align: bottom;
 }
 
