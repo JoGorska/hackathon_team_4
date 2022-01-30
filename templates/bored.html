@@ -71,6 +71,25 @@
     </div>
 </div>
 
+<div class="modal win" tabindex="-1" role="dialog" id="congratsModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title w-100">Congratulations!</h5>
+            </div>
+            <div class="modal-body">
+                <p>You finished the game!</p>
+                <span id="totalFlips"> </span>
+                <span id="winTime"> </span>                
+            </div>
+            <div class="modal-footer">
+                <a class="reset-btn mr-auto" aria-label="reset" href="{% url 'click_mood' author_id=user.id mood='bored' %}"><i class="fas fa-undo"></i> Play Again?</a>
+                <a class="home-btn" aria-label="home" href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a>
+            </div>
+        </div>
+    </div>
+</div>  
+
 <script>
     
     var STATIC_URL = "{{STATIC_URL|safe}}";
