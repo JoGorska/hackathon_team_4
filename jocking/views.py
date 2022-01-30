@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic, View
 from django.views.generic.edit import CreateView
 from django.http import HttpResponseRedirect
@@ -47,7 +47,7 @@ class AddNewJocke(CreateView):
         else:
             jocke_form = JockeForm()
 
-        return render(request, 'jockes_list_paginated.html')
+        return redirect('jockes_list')
 
 
 class JockeEyes(View):
@@ -61,4 +61,4 @@ class JockeEyes(View):
         else:
             jocke.eyes.add(request.user)
 
-        return render(request, 'jockes_list_paginated.html')
+        return redirect('jockes_list')

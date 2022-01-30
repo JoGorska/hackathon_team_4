@@ -17,7 +17,7 @@
   {% csrf_token %}
  
       {{ jocke_form|as_bootstrap}}
-      <input class="btn btn-warning my-3 py-3" type="submit" value="register"/>
+      <input class="btn btn-warning my-3 py-3" type="submit" value="Save"/>
       <input type="hidden" name="next" value="{{ next }}" />
       <input type="hidden" name="author_id" value="{{ user.id }}">
   </form> 
