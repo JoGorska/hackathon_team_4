@@ -63,28 +63,51 @@ The MyMindsEye website provides both employers and their teams with a simple and
 
 ### User Stories
 
-The following user stories were satisfied by 
+The following user stories were satisfied: 
 
-As a user you can: 
+**As a user you can:** 
 
 #1 Register to the website by using your email address and choosing a password to gain access.  
 
-#2 Log-in everyday with your user-name and password and select how you are feeling. 
+#2 Log-in everyday with your user-name and password and record how you are feeling. 
 
 #3 Navigate to the relevant page to get tips on how you are feeling. 
 
-#3 Get tips on the mood you are
+#3 Get tips on the mood you are feeling today or other moods you might be feeling. 
 
-#4 
+#4 Get information on sleep and tips for better sleeping.  
 
+#5 Get information on a sleep technique to help you sleep. 
+
+#6 Navigate back to the home page to choose another emotion. 
+
+#7 Get information if you are bored and tips on what to do if you are bored. 
+
+#8 Play a game if you are bored. 
+
+#9 Get information on happiness and tips on keeping yourself happy. 
+
+#10 Get information on stress and tips on how to manage that stress for work, exams or everyday life. 
+
+#11 Take a breather and breathe with the timing of the lungs to help manage stress. 
+
+#12 Check your mood history. 
+
+#13 Navigate back to the homepage easily. 
+
+#14 Log-out easily. 
 
 
 ### Wireframes 
 
+The website is designed to mobile first and responsive.  
 
-Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB).
+Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB).  Initital wireframes were made and then modified. 
 
-[Wireframes](link/here)
+Wireframes design was focused on emotions and letting the user select how they were feeling the day they logged in.  
+
+Wireframes final version can be found [here](/workspace/hackathon_team_4/static/media/readme/wireframes-mymind.pdf)
+
  
 
 
@@ -234,7 +257,7 @@ Automated tests have not been created due to time constrains of the project.
 
 #### First release
 
-**Relese main fetures:**
+**Release main fetures:**
 
 llll
 
