@@ -1,20 +1,13 @@
+""" Forms for user_account app """
+# pylint: disable=too-few-public-methods
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django import forms
 
 
-
-# class UserForm(forms.ModelForm):
-#    class Meta:
-#        model = User
-#        fields = [...]
-
-
-
-
 class UserForm(UserCreationForm):
     '''
-    Form that uses built-in UserCreationForm to handel user creation
+    Form that uses built-in UserCreationForm to handle user creation
     '''
     first_name = forms.CharField(
         max_length=30, required=True, widget=forms.TextInput(
@@ -43,6 +36,7 @@ class UserForm(UserCreationForm):
         )
 
     class Meta:
+        """ Meta data for UserForm class """
         model = User
         fields = (
             'username', 'first_name', 'last_name', 'password1', 'password2',

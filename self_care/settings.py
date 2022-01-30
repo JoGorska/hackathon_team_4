@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+# pylint: disable=unused-import
 from pathlib import Path
 import os
 import dj_database_url
@@ -37,7 +37,8 @@ development = os.environ.get('DEVELOPMENT', False)
 DEBUG = development
 
 if development:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'self-care-app-hackathon.herokuapp.com']
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000',
+    'self-care-app-hackathon.herokuapp.com']
 else:
     ALLOWED_HOSTS = ["self-care-app-hackathon.herokuapp.com"]
 
