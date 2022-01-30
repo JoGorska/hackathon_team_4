@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             var card = document.createElement('img')
             card.setAttribute('src', logoptio2url)
             card.setAttribute('data-id', i)
+            card.setAttribute('class', 'flip-card')
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
@@ -93,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   
     // checking selected cards for a match
     function checkForMatch() {
-        var cards = document.querySelectorAll('img')
+        var cards = document.querySelectorAll('.flip-card')
         const cardOneId = cardsToCompareId[0]
         const cardTwoId = cardsToCompareId[1]
   
