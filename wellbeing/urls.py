@@ -1,3 +1,4 @@
+""" URLs for Wellbeing app """
 from django.urls import path
 from . import views
 

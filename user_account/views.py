@@ -1,9 +1,9 @@
-from django.shortcuts import render
+""" Views for user_account app """
+# pylint: disable=too-many-ancestors
 from django.views.generic.edit import CreateView
 from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate, login
-from django.contrib.auth.models import User
 from .forms import UserForm
 
 
@@ -24,4 +24,3 @@ class RegisterUserView(CreateView):
         )
         login(self.request, new_user)
         return HttpResponseRedirect(self.success_url)
-

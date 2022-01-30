@@ -1,3 +1,8 @@
+""" Views for wellbeing app """
+# pylint: disable=too-many-ancestors
+# pylint: disable=arguments-differ
+# pylint: disable=no-member
+# pylint: disable=unused-variable
 from django.shortcuts import render, get_object_or_404
 from django.views.generic.edit import CreateView
 from django.http import HttpResponseRedirect
@@ -8,7 +13,7 @@ from .forms import MoodForm
 
 class HomeView(CreateView):
     '''
-
+    View to render home page
     '''
     template_name = 'templates/index.html'
     form_class = MoodForm
@@ -26,7 +31,7 @@ class HomeView(CreateView):
 
 class PostMood(CreateView):
     '''
-
+    view to post mood data from user input
     '''
     template_name = 'index.html'
     form_class = MoodForm
@@ -58,11 +63,11 @@ class ClickMood(CreateView):
         mood_object.save()
         if mood_object.mood == 'tired':
             return render(request, 'tired.html')
-        elif mood_object.mood == 'bored':
+        if mood_object.mood == 'bored':
             return render(request, 'bored.html')
-        elif mood_object.mood == 'happy':
+        if mood_object.mood == 'happy':
             return render(request, 'happy.html')
-        elif mood_object.mood == 'stressed':
+        if mood_object.mood == 'stressed':
             return render(request, 'stressed.html')
-        else:
-            return HttpResponseRedirect("/")
+
+        return HttpResponseRedirect("/")

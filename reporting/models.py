@@ -1,3 +1,4 @@
+""" models for reporting app """
 from django.db import models
 from django.core.exceptions import ValidationError
 
