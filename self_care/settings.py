@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'user_account',
     'wellbeing',
     'reporting',
+    'jocking',
 ]
 
 SITE_ID = 1
