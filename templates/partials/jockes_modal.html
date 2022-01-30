@@ -1,0 +1,35 @@
+{% load static %}
+{% for jocke in jocke_list %}
+<!-- Modal is generated for each jocke and called on trigger button click -->
+<div data-bs-show="true" class="modal fade" id="id-modal-{{jocke.id}}" tabindex="-1" aria-labelledby="modal-label-{{trafficmessage.id}}" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-label-{{jocke.id}}">{{jocke.headline}}
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>{{jocke.punchline}}
+        </h4>
+        <p>From: {{jocke.author.first_name}} on {{jocke.created_on}}
+        </p>
+      </div>
+      <div class="modal-footer">
+        {% if user.is_authenticated %}
+            {% if user not in jocke.eyes.all %}
+            <form action="{% url 'eyes' jocke_id=jocke.id %}" class="d-inline" method="POST">
+            {% csrf_token %}
+            <button class="btn btn-warning" type="submit" name="jocke_id" value="{{jocke.id}}">Close
+            </button>
+            </form>
+            {% endif %}
+        {% endif %}
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back
+        </button> -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

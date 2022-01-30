@@ -24,6 +24,5 @@ urlpatterns = [
     path('user_account/', include('user_account.urls'), name='user_account_urls'),
     path('', include('wellbeing.urls'), name='wellbeing'),
     path('reporting/', include('reporting.urls'), name='reporting'),
+    path('jocking/', include('jocking.urls'), name='jocking'),
 ]
-
-
