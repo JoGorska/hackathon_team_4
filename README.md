@@ -275,6 +275,8 @@ Pylint was used to verify Python code. Any errors were corrected and re-run unti
 
 *R0201* (no-self-use) error ignored for reporting.views and jocking.views
 
+See [Pylint Validation Reports](media/validation/python).
+
 ## Tests
 ------
 
