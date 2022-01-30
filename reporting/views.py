@@ -8,7 +8,7 @@ from wellbeing.models import Mood
 class DatePickerView(View):
     '''
     Date picker that allows the user to choose which day to display
-    successfull url redirects to the page where url contains date
+    than redirects to mood report table containing data from database
     '''
     template_name = "reporting/date_picker.html"
 
@@ -30,7 +30,7 @@ class DatePickerView(View):
         user = get_object_or_404(User, id=user_id)
         # filters all Mood Model objects from the date range for this user
         mood_objects_list = Mood.objects.filter(created_on__range=[start_date, end_date]).filter(author=user)
-        
+
         # creates lists
         list_of_dates = []
         list_of_dates_strings = []
@@ -64,5 +64,3 @@ class DatePickerView(View):
 # def get_mood_report_page(request):
 #     """ View to get mood report page """
 #     return render(request, 'reporting/mood_report.html')
-
-

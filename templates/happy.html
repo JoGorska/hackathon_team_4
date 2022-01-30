@@ -26,6 +26,15 @@
                             <li>Check in with others, pick up the phone and have a chat!  How often do we do that now?</li>
                         </ol>
                     </div>
+                    <div class="col-12 tips mt-5">
+                        <a href="{% url 'add_jocke' %}" class="btn btn-lg btn-secondary" aria-label="go to jockes list page (opens in the same window)">Tell a Jocke</a>
+                    </div>
+                    <div class="col-12 tips">
+                        {% include 'partials/jockes_list_small.html' %}
+                    </div>
+                </div>
+            </div>
+                <div class="row d-flex justify-content-evenly mt-5">
                 </div>
             </div> 
             <span class="home-button ">
