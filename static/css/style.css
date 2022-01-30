@@ -15,14 +15,9 @@ body {
 
 /* Navbar & header */
 
-.header {
-    height: 100vh;
-    background-size: cover;
-}
-
-.header-overlay {
+.page-overlay {
     padding: 20px 0;
-    height: 100%;
+    min-height: calc(100vh - 56px);
     width: 100%;
     background: linear-gradient(217deg, var(--blue), rgba(255,0,0,0) 70.71%),
                 linear-gradient(127deg, var(--coral), rgba(0,255,0,0) 70.71%),
@@ -239,7 +234,7 @@ form label {
 
     .emotion-box {
         width: 46% !important;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         margin-left: 2px;
         margin-right: 2px;
     }
@@ -304,4 +299,72 @@ form label {
 
 }
 
+/* Bored */
+/* Game - Card grid*/
 
+.game-grid{
+    width:100%;
+    display: flex;
+    justify-content:center;
+  }
+  
+  .grid{
+    display:flex;
+    flex-wrap: wrap;
+    height:400px;
+    width:400px;
+  }
+
+  #home-reset {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+  }
+  .home-button {
+    margin-right:2.5%;
+  }
+  .reset-button {
+    margin-left:2.5%;
+  }
+  
+  .home-button a, .reset-button a{
+    text-decoration: none;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.25em;
+    color: var(--blue);
+    text-align: center;
+  }
+  
+  #game-data {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+  }
+  
+  .data-flip, #data-time {
+    position:inline;
+    color: var(--coral-hex);
+    padding: 7px 0 7px 0;
+    background: var(--blue);
+    
+    border: 1px solid #107ff7;
+    border-radius: 20px;
+  
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    
+  }
+  
+  .data-flip {
+    margin-right: 5%;
+    width: 130px;
+  }
+  
+  #data-time {
+    margin-left: 5%;
+    width: 180px;
+  }
