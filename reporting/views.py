@@ -41,3 +41,13 @@ class DatePickerView(View):
         # }
         # return redirect("reports:mood_report", context)
         return render(request, 'index.html')
+
+
+def get_mood_report_page(request):
+    """ View to get mood report page """
+    return render(request, 'reporting/mood_report.html')
+
+
+def get_test_404_page(request):
+    """ View to get 404 page page """
+    return render(request, '404.html')

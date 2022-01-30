@@ -2,9 +2,11 @@
 {% load static %}
 
 {% block content %}
-<div class="header">
-  <div class="header-overlay d-flex justify-content-center align-items-center">
-    <div class="container options-container p-5">
+
+{% if user.is_authenticated %}
+<div>
+  <div class="page-overlay d-flex justify-content-center align-items-center">
+      <div class="container options-container p-5">
 <form action="#" method="POST">
     {% csrf_token %}
     <!-- form gets pre filled with start address and geocoorinates -->
@@ -29,15 +31,54 @@
                  required>
           <div id="end-date-help" class="form-text">
           </div>
+          <input type="hidden" name="user_id" value="{{user.id}}">
         </div>
       </div>
     </div>     
     <div>
       <button type="submit" class="btn btn-warning btn-lg">See mood history
       </button>
+      <a href="{% url 'test_mood_report' %}" class="btn btn-danger btn-lg">Test mood report</a>
+      <a href="{% url 'test_404_page' %}" class="btn btn-success btn-lg">Test 404 page</a>
     </div>
   </form> 
 </div>
 </div>
 </div>
+{% else %}
+
+<div>
+    <div class="page-overlay d-flex justify-content-center align-items-center">
+        <div class="container options-container p-5">
+
+            <div class="row">
+                <div class="col-sm-12 col-lg-9">
+                    <div class="row">
+                        <!--Javascript writing animation-->
+                        <div class="col-12">
+                            <h1 class="fw-bold mb-4 welcome-text" id="writing">
+        
+                            </h1>
+                        </div>
+                        <div class="col-12">
+                            <h2 class="fs-4 mt-5">You must be logged in to access</h2>
+                            <div class="pt-3 login-or-register d-flex">
+                                <a href="{% url 'login' %}?next/" class="p-4 text-decoration-none login">Login</a>
+                                <a href="{% url 'user_account:register' %}" class="p-4 text-decoration-none register">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column align-items-end justify-content-evenly landing-icons">
+                    <img src="{% static 'media/bored-dark.png' %}" width=60 height=60>
+                    <img src="{% static 'media/happy-dark.png' %}" width=60 height=60>
+                    <img src="{% static 'media/redness-dark.png' %}" width=60 height=60>
+                    <img src="{% static 'media/sleep-dark.png' %}" width=60 height=60>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endif %}
   {% endblock %}
