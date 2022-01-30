@@ -36,32 +36,42 @@
           <!--Table body-->
           <tbody>
               <!-- this is one row -->
+              {% if dict_date_moods %}
+              {% for key, value in dict_date_moods.items %}
             <tr>
-              <th scope="row" class="text-start ps-5">1 Example 2022
+              <th scope="row" class="text-start ps-5">{{key}}
               </th>
               <td>
+                {% if "tired" in value %}
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#check"/>
                 </svg>
+                {% endif %}
               </td>
               <td>
+                {% if "bored" in value %}
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#check"/>
                 </svg>
+                {% endif %}
               </td>
               <td>
+                {% if "happy" in value %}
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#check"/>
                 </svg>
+                {% endif %}
               </td>
               <td>
+                {% if "stressed" in value %}
                 <svg class="bi" width="24" height="24">
                   <use xlink:href="#check"/>
                 </svg>
+                {% endif %}
               </td>
             </tr>
-
-           
+            {% endfor %}
+           {% endif %}
           </tbody>
         </table>
       </div>

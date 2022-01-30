@@ -16,11 +16,10 @@ class Mood(models.Model):
     '''
     Model that takes the data about the mood from the user
     '''
-    created_on = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name="mood")
-    mood = models.CharField(max_length=200, choices=MOOD_CHOICES,
-                            default='unknown')
+    mood = models.CharField(max_length=200, choices=MOOD_CHOICES,)
 
 
 class Meta:
