@@ -5,8 +5,6 @@
 {% block content %}
 
 
-
-<div>
   <div class="page-overlay d-flex justify-content-center align-items-center">
       <div class="container options-container p-5">
           <div class="row">
@@ -14,6 +12,7 @@
                   <h1>Time for a Jocke</h1>
 
               </div>
+          </div>
 <div class="container pt-3">
   <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3">
     <!-- forloop to display all messages in the database -->
@@ -58,6 +57,9 @@
     </ul>
   </nav>
   {% endif %}
+</div>
+
+</div>
 </div>
 <!-- jocke  modal -->
 {% include 'partials/jockes_modal.html' %}
