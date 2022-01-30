@@ -69,14 +69,33 @@ As a user you can:
 
 #1 Register to the website by using your email address and choosing a password to gain access.  
 
-#2 Log-in everyday with your user-name and password and select how you are feeling. 
+#2 Log-in everyday with your user-name and password and record how you are feeling. 
 
 #3 Navigate to the relevant page to get tips on how you are feeling. 
 
-#3 Get tips on the mood you are
+#3 Get tips on the mood you are feeling today or other moods you might be feeling. 
 
-#4 
+#4 Get information on sleep and tips for better sleeping.  
 
+#5 Get information on a sleep technique to help you sleep. 
+
+#6 Navigate back to the home page to choose another emotion. 
+
+#7 Get information if you are bored and tips on what to do if you are bored. 
+
+#8 Play a game if you are bored. 
+
+#9 Get information on happiness and tips on keeping yourself happy. 
+
+#10 Get information on stress and tips on how to manage that stress for work, exams or everyday life. 
+
+#11 Take a breather and breathe with the timing of the lungs to help manage stress. 
+
+#12 Check your mood history. 
+
+#13 Navigate back to the homepage easily. 
+
+#14 Log-out easily. 
 
 
 ### Wireframes 
