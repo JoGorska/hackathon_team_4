@@ -63,15 +63,17 @@ The MyMindsEye website provides both employers and their teams with a simple and
 
 ### User Stories
 
+The following user stories were satisfied by 
+
 As a user you can: 
 
 #1 Register to the website by using your email address and choosing a password to gain access.  
 
-#2 Log-in everyday with your user-name and password and select the emotion you are feeling. 
+#2 Log-in everyday with your user-name and password and select how you are feeling. 
 
-#3 Select more than one emotion per day.  
+#3 Navigate to the relevant page to get tips on how you are feeling. 
 
-#3 Get tips on each emotion that has been selected. 
+#3 Get tips on the mood you are
 
 #4 
 
