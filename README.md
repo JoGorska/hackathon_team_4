@@ -63,9 +63,9 @@ The MyMindsEye website provides both employers and their teams with a simple and
 
 ### User Stories
 
-The following user stories were satisfied by 
+The following user stories were satisfied: 
 
-As a user you can: 
+**As a user you can:** 
 
 #1 Register to the website by using your email address and choosing a password to gain access.  
 
@@ -100,10 +100,14 @@ As a user you can:
 
 ### Wireframes 
 
+The website is designed to mobile first and responsive.  
 
-Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB).
+Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB).  Initital wireframes were made and then modified. 
 
-[Wireframes](link/here)
+Wireframes design was focused on emotions and letting the user select how they were feeling the day they logged in.  
+
+Wireframes final version can be found [here](/workspace/hackathon_team_4/static/media/readme/wireframes-mymind.pdf)
+
  
 
 
@@ -253,7 +257,7 @@ Automated tests have not been created due to time constrains of the project.
 
 #### First release
 
-**Relese main fetures:**
+**Release main fetures:**
 
 llll
 
