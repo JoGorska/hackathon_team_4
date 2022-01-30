@@ -1,3 +1,4 @@
+from datetime import datetime, date
 from django.shortcuts import render, get_object_or_404
 from django.views import View
 from django.contrib.auth.models import User
@@ -30,16 +31,27 @@ class DatePickerView(View):
         list_of_dates = []
         list_of_dates_strings = []
         for object in mood_objects_list:
-            date = object.created_on
-            date_to_string = date.strftime("%d %B %Y")
-            list_of_dates_strings.append(date_to_string)
-            list_of_dates.append(date)
-            unique_dates_list = list(set(list_of_dates))
+            datetime_object = object.created_on
+            date_to_string = datetime_object.strftime("%d %B %Y")
+            if date_to_string not in list_of_dates_strings:
+                list_of_dates_strings.append(date_to_string)
+                list_of_dates.append(datetime_object)
 
-        print(f'DATE OF OBJECT{unique_dates_list}')
-        for date in unique_dates_list:
+            # unique_dates_list = list(set(list_of_dates))
+
+        # print(f'LIST OF UNIQUE DATETIME OBJECTS{list_of_dates}')
+        # print(f'LIST OF UNIQUE strings {list_of_dates_strings}')
+        for date in list_of_dates:
             moods_objects_on_day = Mood.objects.filter(created_on=date)
+            list_of_moods_in_one_day = []
+            for objects in moods_objects_on_day:
+                mood = object.mood
+                if mood not in list_of_moods_in_one_day:
+                    list_of_moods_in_one_day.append(mood)
+
+
             print(f'THIS IS ONE DATE{date}')
+            print(f'LIST OF MOODS IN ONE DAY {list_of_moods_in_one_day}')
             
 
 
