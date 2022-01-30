@@ -397,3 +397,34 @@ img.head-image-bottom {
     margin-left: 5%;
     width: 180px;
   }
+
+
+/* Breathing */
+
+#breathing-button {
+    width: 200px;
+    padding: 50px;
+    margin: 50px auto;
+    animation: breathing 11s ease-out infinite normal;
+    background:  var(--blue);
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 15px;
+    text-align: center;    
+    box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.05);
+}
+
+
+@keyframes breathing {
+  0% {
+    transform: scale(0.9);
+  }
+
+  45% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
