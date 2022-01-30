@@ -46,31 +46,23 @@ class DatePickerView(View):
         dict_date_moods = {}
         # for loop to get list of moods
         for date_object in list_of_dates:
+
             date_to_string = date_object.strftime("%d %B %Y")
-            moods_objects_on_day = Mood.objects.filter(created_on=date_object)
+            moods_objects_on_day = Mood.objects.filter(created_on=date_object).filter(author=user)
             for object in moods_objects_on_day:
                 mood = object.mood
                 if mood not in list_of_moods_in_one_day:
                     list_of_moods_in_one_day.append(mood)
-        date_and_moods = {date_to_string: list_of_moods_in_one_day}
-    
-        print(f'LIST OF MOODS IN ONE DAY {list_of_moods_in_one_day}')
-        print(date_and_moods)
-        dict_date_moods.update(date_and_moods)
-        print(dict_date_moods)
-        # context = {
-        #     start_date = start_date
-        #     end_date = end_date
-        # }
-        # return redirect("reports:mood_report", context)
-        return render(request, 'index.html')
+            # creates key value pair
+            date_and_moods = {date_to_string: list_of_moods_in_one_day}
+            # adds item to dictionary: date as key and list of moods as value
+            dict_date_moods.update(date_and_moods)
+        context = {'dict_date_moods': dict_date_moods,}
+        return render(request, 'reporting/mood_report.html', context)
 
 
-def get_mood_report_page(request):
-    """ View to get mood report page """
-    return render(request, 'reporting/mood_report.html')
+# def get_mood_report_page(request):
+#     """ View to get mood report page """
+#     return render(request, 'reporting/mood_report.html')
 
 
-def get_test_404_page(request):
-    """ View to get 404 page page """
-    return render(request, '404.html')
