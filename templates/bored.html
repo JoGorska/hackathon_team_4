@@ -43,8 +43,24 @@
                 <div class="col-12 tips">
                     <h3>If all else fails, try our game below</h3>
                 </div>
-                <div class="col-12">
-                    Game here
+                <div id="home-reset">
+                    <span class="home-button">
+                        <a aria-label="home" href="{% url 'home' %}" ><i class="fas fa-home"></i> Home</a>
+                    </span>
+                    <span class="reset-button">
+                        <a aria-label="reset" href="{% url 'click_mood' author_id=user.id mood='bored' %}"><i class="fas fa-undo"></i> Reset</a>
+                    </span>
+                </div>
+                <div id="game-data">
+                    <h4 class="data-flip flips">Flips:<span id="result"> 0</span></h3>
+                    <h4 id="data-time">Time:<span id="timer"> 00:00</span></h3>
+                </div>
+            
+
+
+                <div class="game-grid">
+                    <div class="grid">
+                    </div>
                 </div>
             </div>
         </div>
