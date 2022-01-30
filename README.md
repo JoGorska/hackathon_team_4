@@ -55,20 +55,59 @@ Click [here](https://self-care-app-hackathon.herokuapp.com/) to live site.
 
 ### Purpose
 
-ff
+The success of any organisation depends on the wellness and wellbeing of the workforce. A positive and proactive approach by employers to monitor and promote positive mental health impacts not only productivity, but also employee health and company culture.
+
+Stress and poor mental health prevent employees being fully focused on their work, and can eventually lead to burn-out and absenteeism, impacting company costs and output. COVID-19 has rapidly increased the importance of employers implementing tools and processes to protect the mental health and wellbeing of their workforce.
+
+The MyMindsEye website provides both employers and their teams with a simple and effective way of monitoring mental health, as well as offering simple and practical tools to take action when needed.
 
 ### User Stories
 
-d
+The following user stories were satisfied: 
 
+**As a user you can:** 
+
+#1 Register to the website by using your email address and choosing a password to gain access.  
+
+#2 Log-in everyday with your user-name and password and record how you are feeling. 
+
+#3 Navigate to the relevant page to get tips on how you are feeling. 
+
+#3 Get tips on the mood you are feeling today or other moods you might be feeling. 
+
+#4 Get information on sleep and tips for better sleeping.  
+
+#5 Get information on a sleep technique to help you sleep. 
+
+#6 Navigate back to the home page to choose another emotion. 
+
+#7 Get information if you are bored and tips on what to do if you are bored. 
+
+#8 Play a game if you are bored. 
+
+#9 Get information on happiness and tips on keeping yourself happy. 
+
+#10 Get information on stress and tips on how to manage that stress for work, exams or everyday life. 
+
+#11 Take a breather and breathe with the timing of the lungs to help manage stress. 
+
+#12 Check your mood history. 
+
+#13 Navigate back to the homepage easily. 
+
+#14 Log-out easily. 
 
 
 ### Wireframes 
 
+The website is designed to mobile first and responsive.  
 
-Wireframes created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB).
+Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB).  Initital wireframes were made and then modified. 
 
-[Wireframes](link/here)
+Wireframes design was focused on emotions and letting the user select how they were feeling the day they logged in.  
+
+Wireframes final version can be found [here](/workspace/hackathon_team_4/static/media/readme/wireframes-mymind.pdf)
+
  
 
 
@@ -218,7 +257,7 @@ Automated tests have not been created due to time constrains of the project.
 
 #### First release
 
-**Relese main fetures:**
+**Release main fetures:**
 
 llll
 

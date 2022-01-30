@@ -36,17 +36,15 @@
                                 stuck in traffic, put some music on and allow your mind to wander.
                             <li>If you have children, let them be bored too. Allow their imaginations to run free and be
                                 creative.</li>
+                            <li>Games can help with our memory thus improving mental health. If you're still a bit bored give our Eye Match game a go and test your memory!</li>
                         </ol>
                     </div>
 
                 </div>
                 <div class="col-12 tips">
-                    <h3>If you are still bored then have a go at our game</h3>
+                    <h3 id="eye-match-header">Eye Match</h3>
                 </div>
                 <div id="home-reset">
-                    <span class="home-button">
-                        <a aria-label="home" href="{% url 'home' %}" ><i class="fas fa-home"></i> Home</a>
-                    </span>
                     <span class="reset-button">
                         <a aria-label="reset" href="{% url 'click_mood' author_id=user.id mood='bored' %}"><i class="fas fa-undo"></i> Reset</a>
                     </span>
@@ -60,14 +58,18 @@
                     </div>
                 </div>
             </div>
+            <span class="home-button ">
+                <a aria-label="home" href="{% url 'home' %}" class="fs-6"><i class="fas fa-home pt-3"></i> Back to Home</a>
+            </span>
         </div>
-        <div class="row d-flex justify-content-evenly mt-5">
+        <!-- Back to top Button -->
+        <div class="btt-button">
+            <a class="btt-link d-flex h-100">
+                <i class="fas fa-arrow-up mx-auto my-auto"></i>
+            </a>	
         </div>
     </div>
 </div>
-</div>
-
-
 
 <script>
     
@@ -87,3 +89,12 @@
 <script src="{% static 'js/game.js' %}"></script>
 {% endblock %}
 
+{% block postloadjs %}
+    <!-- Back to top Button script-->
+    {{ block.super }}
+    <script>
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	  </script>
+{% endblock %}
