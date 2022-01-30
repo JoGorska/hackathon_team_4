@@ -273,6 +273,8 @@ Pylint was used to verify Python code. Any errors were corrected and re-run unti
 
 *W0611* (unused-import) error ignored for user_account.urls and settings.py as these are erroneous.
 
+*R0201* (no-self-use) error ignored for reporting.views 
+
 ## Tests
 ------
 

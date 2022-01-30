@@ -1,4 +1,7 @@
-from datetime import datetime, date
+""" views for the reporting app """
+# pylint: disable=no-member
+# pylint: disable=no-self-use
+# pylint: disable=too-many-locals
 from django.shortcuts import render, get_object_or_404
 from django.views import View
 from django.contrib.auth.models import User
@@ -12,13 +15,13 @@ class DatePickerView(View):
     '''
     template_name = "reporting/date_picker.html"
 
-    def get(self, request, *args, **kwargs):
+    def get(self, request):
         '''
         gets page that displays a html form
         '''
         return render(request, 'reporting/date_picker.html')
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request):
         '''
         posts date picker form data
         '''
@@ -29,14 +32,15 @@ class DatePickerView(View):
         # gets user object
         user = get_object_or_404(User, id=user_id)
         # filters all Mood Model objects from the date range for this user
-        mood_objects_list = Mood.objects.filter(created_on__range=[start_date, end_date]).filter(author=user)
+        mood_objects_list = Mood.objects.filter(
+            created_on__range=[start_date, end_date]).filter(author=user)
 
         # creates lists
         list_of_dates = []
         list_of_dates_strings = []
         # for loop to get list of dates
-        for object in mood_objects_list:
-            date_object = object.created_on
+        for mood_object in mood_objects_list:
+            date_object = mood_object.created_on
             date_to_string = date_object.strftime("%d %B %Y")
             if date_to_string not in list_of_dates_strings:
                 list_of_dates_strings.append(date_to_string)
@@ -49,8 +53,8 @@ class DatePickerView(View):
 
             date_to_string = date_object.strftime("%d %B %Y")
             moods_objects_on_day = Mood.objects.filter(created_on=date_object).filter(author=user)
-            for object in moods_objects_on_day:
-                mood = object.mood
+            for mood_object in moods_objects_on_day:
+                mood = mood_object.mood
                 if mood not in list_of_moods_in_one_day:
                     list_of_moods_in_one_day.append(mood)
             # creates key value pair
