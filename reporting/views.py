@@ -22,39 +22,42 @@ class DatePickerView(View):
         '''
         posts date picker form data
         '''
+        # gets data posted by the html form
         start_date = request.POST.get('start_date')
         end_date = request.POST.get('end_date')
-        # need to add one day to end date ???
         user_id = request.POST.get('user_id')
+        # gets user object
         user = get_object_or_404(User, id=user_id)
+        # filters all Mood Model objects from the date range for this user
         mood_objects_list = Mood.objects.filter(created_on__range=[start_date, end_date]).filter(author=user)
+        
+        # creates lists
         list_of_dates = []
         list_of_dates_strings = []
+        # for loop to get list of dates
         for object in mood_objects_list:
-            datetime_object = object.created_on
-            date_to_string = datetime_object.strftime("%d %B %Y")
+            date_object = object.created_on
+            date_to_string = date_object.strftime("%d %B %Y")
             if date_to_string not in list_of_dates_strings:
                 list_of_dates_strings.append(date_to_string)
-                list_of_dates.append(datetime_object)
+                list_of_dates.append(date_object)
 
-            # unique_dates_list = list(set(list_of_dates))
-
-        # print(f'LIST OF UNIQUE DATETIME OBJECTS{list_of_dates}')
-        # print(f'LIST OF UNIQUE strings {list_of_dates_strings}')
-        for date in list_of_dates:
-            moods_objects_on_day = Mood.objects.filter(created_on=date)
-            list_of_moods_in_one_day = []
-            for objects in moods_objects_on_day:
+        list_of_moods_in_one_day = []
+        dict_date_moods = {}
+        # for loop to get list of moods
+        for date_object in list_of_dates:
+            date_to_string = date_object.strftime("%d %B %Y")
+            moods_objects_on_day = Mood.objects.filter(created_on=date_object)
+            for object in moods_objects_on_day:
                 mood = object.mood
                 if mood not in list_of_moods_in_one_day:
                     list_of_moods_in_one_day.append(mood)
-
-
-            print(f'THIS IS ONE DATE{date}')
-            print(f'LIST OF MOODS IN ONE DAY {list_of_moods_in_one_day}')
-            
-
-
+        date_and_moods = {date_to_string: list_of_moods_in_one_day}
+    
+        print(f'LIST OF MOODS IN ONE DAY {list_of_moods_in_one_day}')
+        print(date_and_moods)
+        dict_date_moods.update(date_and_moods)
+        print(dict_date_moods)
         # context = {
         #     start_date = start_date
         #     end_date = end_date
