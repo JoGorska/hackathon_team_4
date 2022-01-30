@@ -124,6 +124,10 @@ The issues were than closed automaticaly when the pull request was linked to the
 
 ### Navbar and Footer
 
+Navbar and Footer has been copied from Bootstrap components and adjusted to the needs of the project. 
+
+The navbar is transparent and the colors have been choosen to compliment the body of the website.  The navbar collapses into a hamburger menu for mobile view.  O
+
 xx
 
 ### Home page 
