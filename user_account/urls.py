@@ -1,9 +1,11 @@
+""" URLs for user_account app """
+# pylint: disable=unused-import
 from django.urls import path
 from django.contrib.auth import views as auth_views
 from user_account.views import RegisterUserView
 from . import views
 
-app_name = "user_account"
+APP_NAME = "user_account"
 
 urlpatterns = [
     path(

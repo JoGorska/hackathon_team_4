@@ -1,7 +1,10 @@
+""" Views for Joking app """
+# pylint: disable=no-member
+# pylint: disable=too-many-ancestors
+# pylint: disable=no-self-use
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic, View
 from django.views.generic.edit import CreateView
-from django.http import HttpResponseRedirect
 from .models import Jocke
 from .forms import JockeForm
 
@@ -36,6 +39,7 @@ class AddNewJocke(CreateView):
         )
 
     def post(self, request, *args, **kwargs):
+        """ post method """
 
         jocke_form = JockeForm(data=request.POST)
         if jocke_form.is_valid():
@@ -55,6 +59,7 @@ class JockeEyes(View):
     adds user to the users list that have clicked the eye
     '''
     def post(self, request, jocke_id):
+        """ post method """
         jocke = get_object_or_404(Jocke, id=jocke_id)
         if jocke.eyes.filter(id=request.user.id).exists():
             jocke.eyes.remove(request.user)
