@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from .models import Jocke
 from .forms import JockeForm
 
+
 class JockesList(generic.ListView):
     '''
     class view enabling to display the list of jockes with pagination

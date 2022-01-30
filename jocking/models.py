@@ -9,7 +9,7 @@ class Jocke(models.Model):
                                related_name="jocke")
     created_on = models.DateTimeField(auto_now=True)
     headline = models.TextField()
-    punch_line = models.TextField()
+    punchline = models.TextField()
     eyes = models.ManyToManyField(User, related_name='thanks', blank=True)
 
     class Meta:
