@@ -115,7 +115,7 @@ Wireframes final version can be found [here](/workspace/hackathon_team_4/static/
 
 ![Screenshot of the canban board](im/here)(link-to/canba)
 
-Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](https://github.com/JoGorska/mileage-tracker/projects/1). The issues are currently in two categories - done or for the next relese. 
+Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](https://github.com/JoGorska/mileage-tracker/projects/1). The issues are currently in two categories - done or for the next release. 
 
 The issues were than closed automaticaly when the pull request was linked to the issue. 
 
@@ -126,7 +126,7 @@ The issues were than closed automaticaly when the pull request was linked to the
 
 Navbar and Footer has been copied from Bootstrap components and adjusted to the needs of the project. 
 
-The navbar is transparent and the colors have been choosen to compliment the body of the website.  The navbar collapses into a hamburger menu for mobile view.  The navbar features to the website logo on the left which will link back to the emotions page.  On the right it also consists of a login/register feature which changes to welcome "user name" when logged in and on mobile devices.  Links on the right of the navbar include logout so the user can log out, a link to mood history and the homepage.  These three features on mobile devices appear in a drop-down when you select the hamburger menu.
+The navbar is transparent and the colors have been choosen to compliment the body of the website.  The navbar collapses into a hamburger menu for mobile view.  The navbar features the website logo on the left which will link back to the emotions page.  On the right it also consists of a login/register feature which changes to welcome "user name" when logged in and on mobile devices.  Links on the right of the navbar include logout so the user can log out, a link to mood history and the homepage.  These three features on mobile devices appear in a drop-down when you select the hamburger menu.
 
 The footer contains minimal information about the authors of the website and stays at the bottom of the page on all pages.  It does not contain any relevant information for the user or links for the user however links could be added to social media or other useful links for future features. 
 
@@ -144,24 +144,23 @@ The log-in page allows the user to log their username/email and password to ente
 
 ### Home Page/Emotions Page 
 
-As like all pages the home page contains the hero-image of the person on the beach.  On the homepage there is a container with a welcoming message and links to four emotions for the user to choose from.  The four emotions are: tired, happy, bored or stressed.  Each emotion has a link that will link to the relevant page.  Each emotion has an eye depicting the four emotions.  These eyes keep inline with the styling of the page and the name of the website "MyMindsEye".  If a user chooses an emotion this will be logged and stored for the user to keep a record of their emotions on a particular day.     
+As like all pages the home page contains the hero-image of the person on the beach.  On the homepage there is a container with a welcoming message and links to four emotions for the user to choose from.  The four emotions are: tired, happy, bored or stressed.  Each emotion has a link that will link to the relevant page.  Each emotion has an eye depicting the four emotions.  These eyes keep inline with the styling of the page and the name of the organisation "MyMindsEye".  If a user chooses an emotion this will be logged and stored for the user to keep a record of their emotions on a particular day.     
 
 ### Emotion Pages
 
 All emotion pages give an introduction to that emotion and tips for that emotion.  Each page also contain a 'back to home' link so the user can easily return to the homepage.  
 
   #### Sleep 
-    If the user chooses 'tired' as their emotion they are directed to the sleep page.  The sleep page gives and introduction to the importance of sleep, tips on how to sleep better and features a technique used on how to fall asleep.  It is explained what the technique is, how it works and how it is done.  The technique is laid out using a bootstrap accordian.  The accordian means that the page is not completely overtaken by information and the user can choose to open it as they wish.    
+    If the user chooses 'tired' as their emotion they are directed to the sleep page.  The sleep page gives an introduction to the importance of sleep, tips on how to sleep better and features a technique used on how to fall asleep.  It is explained what the technique is, how it works and how it is done.  The technique is laid out using a bootstrap accordian.  The accordian means that the page is not completely overtaken by information and the user can choose to open it as they wish.    
 
   #### Boredom 
-    If the user chooses 'bored' as their emotion they are directed to the boredom page.  This gives and introduction to embrace the boredom and tips to deal with boredom.  This page also features a game called Eye Match, again keeping in with the theme of the website, for the user to play to keep them occupied.  The came is a simple memory match game where the user matches cards in the fastest time possible.  The user can reset the game and play again if they wish.  Memory games while simple in nature are very effective in improving cognitive function, memory and focus. 
+    If the user chooses 'bored' as their emotion they are directed to the boredom page.  This gives and introduction to embrace boredom and tips on how to deal with boredom.  This page also features a game called Eye Match, again keeping in with the theme of the website.  The came is a simple memory match game where the user matches cards in the fastest time possible.  The user can reset the game and play again if they wish.  Memory games, while simple in nature, are very effective in improving cognitive function, memory and focus. 
 
   #### Happy
     If the user chooses 'happy' as their emotion they are directed to the happy page.  This gives and introduction to happyness and tips to keep that happiness going.
 
   #### Stressed
     If the user chooses 'stressed' as their emotion they are directed to the stressed page.  This page gives an introduction to stress and tips to manage stress.  The stress page also features a bootstrap accordion which gives information on tips to manage workplace stress, exam stress and everyday stress. 
-
 
 
 ## Future Features 
@@ -175,11 +174,11 @@ All emotion pages give an introduction to that emotion and tips for that emotion
 
   - Offers a wider range of advice and tools to support mental health
   - Prompts introspection about areas of mental health at work
-  - Ensures a feeling of being valued and supported at work.
+  - Ensures a feeling of being valued and supported at work
 
   **Benefits to the organisation:**
 
-  - Facilitates the prioritisation of areas that are identified as crucial to     culture and productivity
+  - Facilitates the prioritisation of areas that are identified as crucial to culture and productivity
   - Enhances company reputation, aiding current workforce satisfaction and future recruitment
   - Provides a means of reducing the costs associated with poor wellbeing.
 
@@ -201,12 +200,12 @@ All emotion pages give an introduction to that emotion and tips for that emotion
   
   - Promotes a culture of inclusion and support
   
-  - Provides workforce with an addition resource for mental health support.
+  - Provides workforce with an additional resource for mental health support.
  
 
   ### Employer Blog
 
-  The addition of a company/organisation blog to the website, showcasing management articles and company news, would enhance to information available to employees looking for support with personal wellbeing. Blogs can be tailored according to the company or employees’ needs, and designed to easily searchable by category or author.
+  The addition of a company/organisation blog to the website, showcasing management articles and company news, would enhance the information available to employees looking for support with personal wellbeing. Blogs can be tailored according to the company or employees’ needs, and designed to be easily searchable by category or author.
 
   **Benefits to the user/employee:**
 
@@ -228,7 +227,7 @@ All emotion pages give an introduction to that emotion and tips for that emotion
 
   ### Smartphone Fitness App Link
 
-  The information being tracked by the website could be developed to interact with similar fitness or wellness apps, to enhance to quality of reporting and analysis. Apps with similar functions, e.g. sleep, could be improved with the information being tracked by the website.
+  The information being tracked by the website could be developed to interact with similar fitness or wellness apps, to enhance quality of reporting and analysis. Apps with similar functions, e.g. sleep, could be improved with the information being tracked by the website.
 
   **Benefits to the user/employee:**
 
@@ -268,7 +267,7 @@ All emotion pages give an introduction to that emotion and tips for that emotion
 
   ### Check-In Trend/Analysis
 
-  The features of the website could be enhanced with the provision of detailed and accessible analysis of check-in trends. Graphical representations of mood or emotion changes, employees can gain insight into triggers or areas of potential concern. Trends could be organised by category or level, with users being provided with more focused advice for particular trends.
+  The features of the website could be enhanced with the provision of detailed and accessible analysis of check-in trends. Graphical representations of mood or emotional changes, employees can gain insight into triggers or areas of potential concern. Trends could be organised by category or level, with users being provided with more focused advice for particular trends.
 
   **Benefits to the user/employee:**
 
@@ -535,6 +534,7 @@ pip3 install -r requirements.txt
 * [Markdown best practices](https://www.markdownguide.org/basic-syntax/)
 * [Markdown Table of content generator](http://ecotrust-canada.github.io/markdown-toc/)
 * [How to do typewriter font](https://www.w3schools.com/howto/howto_js_typewriter.asp)
+* [Stack Overflow](https://stackoverflow.com)
 
 ### Tutorials and inspiration
 
@@ -549,11 +549,8 @@ pip3 install -r requirements.txt
 * The inspiration for the boredom content can be found [here](https://www.dummies.com/article/body-mind-spirit/emotional-health-psychology/emotional-health/mindfulness/how-to-overcome-boredom-and-restlessness-to-practice-mindfulness-164027) and [here](https://www.medicalnewstoday.com/articles/325697)
 
 
-
-
-
-
-
 ### People
+
+
 
 
