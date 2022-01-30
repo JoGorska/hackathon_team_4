@@ -241,7 +241,7 @@ Pylint was used to verify Python code. Any errors were corrected and re-run unti
 
 *W0612* (unused-variable) errors ignored for wellbeing.views as variables would be used for future functionality
 
-*W0611* (unused-import) error ignored for user_account.urls as this is erroneous.
+*W0611* (unused-import) error ignored for user_account.urls and settings.py as these are erroneous.
 
 ## Tests
 ------
