@@ -55,11 +55,25 @@ Click [here](https://self-care-app-hackathon.herokuapp.com/) to live site.
 
 ### Purpose
 
-Mental health is more important now than ever. 
+The success of any organisation depends on the wellness and wellbeing of the workforce. A positive and proactive approach by employers to monitor and promote positive mental health impacts not only productivity, but also employee health and company culture.
+
+Stress and poor mental health prevent employees being fully focused on their work, and can eventually lead to burn-out and absenteeism, impacting company costs and output. COVID-19 has rapidly increased the importance of employers implementing tools and processes to protect the mental health and wellbeing of their workforce.
+
+The MyMindsEye website provides both employers and their teams with a simple and effective way of monitoring mental health, as well as offering simple and practical tools to take action when needed.
 
 ### User Stories
 
-d
+As a user you can: 
+
+#1 Register to the website by using your email address and choosing a password to gain access.  
+
+#2 Log-in everyday with your user-name and password and select the emotion you are feeling. 
+
+#3 Select more than one emotion per day.  
+
+#3 Get tips on each emotion that has been selected. 
+
+#4 
 
 
 
