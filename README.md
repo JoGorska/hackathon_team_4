@@ -113,7 +113,7 @@ Wireframes final version can be found [here](/workspace/hackathon_team_4/static/
 
 ### Agile Methodology
 
-![Screenshot of the canban board](im/here)(link-to/canba)
+![Screenshot of the canban board](/workspace/hackathon_team_4/static/media/readme/canban-board.pdf)
 
 Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](https://github.com/JoGorska/mileage-tracker/projects/1). The issues are currently in two categories - done or for the next release. 
 
@@ -541,8 +541,6 @@ pip3 install -r requirements.txt
 * [Stack Overflow](https://stackoverflow.com)
 
 ### Tutorials and inspiration
-
-* The project walkthrough I Think Therefore I Blog tutorial provided instpiration for traffic alerts the repository can be found [here](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/blog/views.py)
 
 * The Sleep Technique was found on the website [healthline.ie](https://www.healthline.com/health/4-7-8-breathing#How-to-do-it-)
 
