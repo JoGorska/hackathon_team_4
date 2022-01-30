@@ -283,21 +283,24 @@ form label {
         font-size: 2.2em;
     }
 
-.accordion-button {
+.button-header {
     background: var(--coral-hex) !important;
-    box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.05) !important;
+}
+.button-header:focus {
+    background: var(--coral-hex) !important;
+    box-shadow: none;
 }
 
-.accordion-body {
+.accordion-bod-text {
     background-color: var(--coral) !important;     
     color: var(--font);    
-    box-shadow: 0 5px 10px rgba(0,0,0,.05), 0 5px 5px rgba(0,0,0,.05);
 }
 
-[type=button]:not(:disabled), .accordion-button::after {
+[type=button]:not(:disabled), .button-header::after {
     color: var(--font) !important;
-
 }
+
+
 
 /* Bored */
 /* Game - Card grid*/
