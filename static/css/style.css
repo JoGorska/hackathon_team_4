@@ -298,3 +298,73 @@ form label {
     color: var(--font) !important;
 
 }
+
+/* Bored */
+/* Game - Card grid*/
+
+.game-grid{
+    width:100%;
+    display: flex;
+    justify-content:center;
+  }
+  
+  .grid{
+    display:flex;
+    flex-wrap: wrap;
+    height:400px;
+    width:400px;
+  }
+
+  #home-reset {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+  }
+  .home-button {
+    margin-right:2.5%;
+  }
+  .reset-button {
+    margin-left:2.5%;
+  }
+  
+  .home-button a, .reset-button a{
+    text-decoration: none;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.25em;
+    color: var(--blue);
+    text-align: center;
+  }
+  
+  #game-data {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5%;
+  }
+  
+  .data-flip, #data-time {
+    position:inline;
+    color: var(--coral-hex);
+    padding: 7px 0 7px 0;
+    background: var(--blue);
+    
+    border: 1px solid #107ff7;
+    border-radius: 20px;
+  
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    
+  }
+  
+  .data-flip {
+    margin-right: 5%;
+    width: 130px;
+  }
+  
+  #data-time {
+    margin-left: 5%;
+    width: 180px;
+  }
