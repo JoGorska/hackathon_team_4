@@ -324,7 +324,9 @@ img.head-image-middle {
 img.head-image-bottom {
     vertical-align: bottom;
 }
-
+#box-outline {
+    border-color: var(--coral) !important;
+}
 
 
 
