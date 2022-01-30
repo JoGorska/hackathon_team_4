@@ -5,35 +5,35 @@ document.addEventListener('DOMContentLoaded', () =>{
     //load all card options
     const allCardsArray = [{
         name: 'Bored',
-        img: "{% media '100x100/bored.png' %}"
+        img: "{% static 'media/100x100/bored.png' %}"
     },
     {
         name: 'Bored - Dark',
-        img: './media/100x100/bored-dark.png'
+        img: "{% static 'media/100x100/bored-dark.png' %}"
     },
     {
         name: 'Happy',
-        img: './media/100x100/happy.png'
+        img: "{% static 'media/100x100/happy.png' %}"
     },
     {
         name: 'Happy - Dark',
-        img: './media/100x100/happy-dark.png'
+        img: "{% static 'media/100x100/happy-dark.png' %}"
     },
     {
         name: 'Redness',
-        img: './media/100x100/redness.png'
+        img: "{% static 'media/100x100/redness.png' %}"
     },
     {
         name: 'Redness - Dark',
-        img: './media/100x100/redness-dark.png'
+        img: "{% static 'media/100x100/redness-dark.png' %}"
     },
     {
-      name: 'Sleep',
-      img: './media/100x100/sleep.png'
+        name: 'Sleep',
+        img: "{% static 'media/100x100/sleep.png' %}"
     },
     {
-      name: 'Sleep - Dark',
-      img: "{% static 'media/100x100/sleep-dark.png' %}"
+        name: 'Sleep - Dark',
+        img: "{% static 'media/100x100/sleep-dark.png' %}"
     }
     ];
   
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         for (let i=0; i<allCardsArray.length; i++)
         {
             var card = document.createElement('img')
-            card.setAttribute('src', 'static/media/100x100/logo-option-2.png')
+            card.setAttribute('src',"{% static 'media/100x100/logo-option-2.png' %}")
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -130,6 +130,8 @@ document.addEventListener('DOMContentLoaded', () =>{
         flipCounter();
         
     }
+
+    createBoard();
   
     let flips = 0
     let counter = document.querySelector('.flips')
