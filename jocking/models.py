@@ -20,5 +20,3 @@ class Jocke(models.Model):
 
     def number_of_eyes(self):
         return self.eyes.count()
-
-
