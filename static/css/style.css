@@ -191,6 +191,30 @@ form label {
     border-radius: 50%;
 }
 
+/* Back-to-Top button */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    background: var(--coral);
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    color: var(--blue);
+    z-index: 999;
+}
+
+.btt-link {
+    cursor: pointer;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.btt-link:hover {
+    color: var(--font);
+}
+
 @media screen and (max-width: 991px) {
 
     .navbar {
