@@ -366,6 +366,18 @@ pip3 install -r requirements.txt
 
 * The project walkthrough I Think Therefore I Blog tutorial provided instpiration for traffic alerts the repository can be found [here](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/blog/views.py)
 
+* The Sleep Technique was found on the website [healthline.ie](https://www.healthline.com/health/4-7-8-breathing#How-to-do-it-)
+
+* Inspiration for the introduction to the importance of sleep was provided from an article written by Alison Brown, MSc. and can be found [here](https://jameskirkbernardfoundation.org/featured/sleep-matters/?gclid=Cj0KCQiA6NOPBhCPARIsAHAy2zC1wcK7zm3QaHnZleHyxBdekrOKmQhFIwGv_Fos3FxaNdwv2PbIAG0aAkIUEALw_wcB) 
+
+* Total Health Pharmacy provided a lot of information and inspiration for the tips and content.  In particular their info-graphics.  Click [here](https://www.totalhealth.ie/) for more information on Total Health Pharmacy. 
+
+* The inspiration for the boredom content can be found [here](https://www.dummies.com/article/body-mind-spirit/emotional-health-psychology/emotional-health/mindfulness/how-to-overcome-boredom-and-restlessness-to-practice-mindfulness-164027) and [here](https://www.medicalnewstoday.com/articles/325697)
+
+
+
+
+
 
 
 ### People
