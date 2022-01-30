@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   
     //duplicate first 8 indexs from allCardsArray to back 8 indexs within gameCards array
     for (var j = 8; j <16; j++){
-        gameCards[j] = allCardsArray[j-10]
+        gameCards[j] = allCardsArray[j-8]
     }
   
     // randomise cards for loading to grid
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   
     //create game board
     function createBoard() {
-        for (let i=0; i<allCardsArray.length; i++)
+        for (let i=0; i<gameCards.length; i++)
         {
             var card = document.createElement('img')
             card.setAttribute('src', logoptio2url)
