@@ -55,7 +55,7 @@ Click [here](https://self-care-app-hackathon.herokuapp.com/) to live site.
 
 ### Purpose
 
-ff
+Mental health is more important now than ever. 
 
 ### User Stories
 
