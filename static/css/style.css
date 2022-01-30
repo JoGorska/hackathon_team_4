@@ -378,6 +378,7 @@ img.head-image-bottom {
   }
   .home-button {
     margin-right:2.5%;
+
   }
   .reset-button {
     margin-left:2.5%;
@@ -427,6 +428,40 @@ img.head-image-bottom {
 #eye-match-header {
     text-align: center !important;
 }
+
+/* Game Win Modal */
+
+.modal-content {
+    text-align: left;
+    color: #ffffff;
+    background: linear-gradient(217deg, var(--blue), rgba(255,0,0,0.7) 70.71%),
+                linear-gradient(127deg, var(--coral), rgba(0,255,0,0.7) 70.71%),
+                linear-gradient(336deg, var(--yellow), rgba(0,0,255,0.7) 70.71%);
+    border: 1px solid #107ff7;}
+  
+  .modal-title {
+    text-align: center !important;
+    font-family: 'Spartan', sans-serif;
+    color: gold;
+  }
+  
+  .modal-btn {
+    color: white;
+    font-family: 'Spartan', sans-serif;
+    font-size: 2em;
+  }
+  
+  #game-start{
+    text-align: center !important;
+  }
+
+  .reset-btn, .home-btn {
+    text-decoration: none !important;
+  }
+  
+  .reset-btn:hover, .home-btn:hover {
+    color: gold;
+  }
 
 
 /* Breathing */
