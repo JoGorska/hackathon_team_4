@@ -1,5 +1,16 @@
 /* Script for bored.html flip game */
 
+var logoptio2url = logoptio2url
+
+var bored_dark_url = bored_dark_url 
+var bored_url = bored_url 
+var happy_dark_url = happy_dark_url
+var happy_url = happy_url
+var redness_dark_url = redness_dark_url
+var redness_url = redness_url
+var sleep_dark_url = sleep_dark_url
+var sleep_url = sleep_url
+
 document.addEventListener('DOMContentLoaded', () =>{
 
     //load all card options
@@ -71,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         for (let i=0; i<allCardsArray.length; i++)
         {
             var card = document.createElement('img')
-            card.setAttribute('src',"{% static 'media/100x100/logo-option-2.png' %}")
+            card.setAttribute('src', logoptio2url)
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
