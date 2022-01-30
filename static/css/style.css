@@ -185,6 +185,12 @@ form label {
     color: var(--font);
 }
 
+.jo, .nick, .rachel, .conor, .lydia {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 991px) {
 
     .navbar {
@@ -264,6 +270,16 @@ form label {
 
     .form-container {
         width: 95% !important;
+    }
+
+    
+    .jo,
+    .nick,
+    .rachel,
+    .conor,
+    .lydia {
+        height: 35px;
+        width: 35px;
     }
 }
 
