@@ -115,9 +115,7 @@ Wireframes final version can be found [here](/workspace/hackathon_team_4/static/
 
 ![Screenshot of the canban board](/workspace/hackathon_team_4/static/media/readme/canban-board.pdf)
 
-Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](https://github.com/JoGorska/mileage-tracker/projects/1). The issues are currently in two categories - done or for the next release. 
-
-The issues were than closed automaticaly when the pull request was linked to the issue. 
+Github issues were used to assist with creating user stories. The issues are currently in four categories - to do, in progress, on hold or done.  
 
 ## Existing Features
 ------
