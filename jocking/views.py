@@ -54,7 +54,7 @@ class JockeEyes(View):
     '''
     adds user to the users list that have clicked the eye
     '''
-    def post(self, request, msg_id):
+    def post(self, request, jocke_id):
         jocke = get_object_or_404(Jocke, id=jocke_id)
         if jocke.eyes.filter(id=request.user.id).exists():
             jocke.eyes.remove(request.user)
