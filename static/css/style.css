@@ -312,7 +312,7 @@ form label {
     display:flex;
     flex-wrap: wrap;
     height:400px;
-    width:500px;
+    width:400px;
   }
 
   #home-reset {
