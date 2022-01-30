@@ -30,3 +30,4 @@ function typeWriter() {
 }
 
 typeWriter();
+
