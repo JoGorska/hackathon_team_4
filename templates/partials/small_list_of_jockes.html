@@ -1,0 +1,34 @@
+{% load static %}
+<div class="container pt-3 mt-4 mb-5">
+    <h2>Check traffic Alerts
+    </h2>
+  </div>
+  <div class="container pt-3">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3">
+      <!-- forloop to display all messages in the database -->
+      {% for trafficmessage in trafficmessage_list|slice:"3" %}
+      <div class="col mt-1 mb-3">
+        <div class="card border-warning shadow-lg">
+          <!-- card header -->
+          {% include 'partials/traffic_msg_header.html' %}
+          <!-- card body -->
+          <div class="card-body">
+            <!-- Modal Trigger -->
+            <div data-bs-toggle="modal" data-bs-target="#id-modal-{{trafficmessage.id}}" data-bs-show="true">
+              <p class="card-text fs-5 text">{{trafficmessage.area}} in {{trafficmessage.county}} (more)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- traffic message modal -->
+  {% include 'partials/traffic_msg_modal.html' %}
+  <div class="container pt-3 mt-4 mb-5">
+    <a href="{% url 'home' %}" class="text-decoration-none text-muted" aria-label="go to home page (opens in the same window)">
+      <h2>more...
+      </h2>
+    </a>
+  </div>
