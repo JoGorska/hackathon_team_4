@@ -450,14 +450,13 @@ Manual testing of all buttons, links, functionality and grammer on the website h
 - the user can count with the animated lungs to help regulate their breathing 
 - the user can go back to the home by clicking on the 'Back to Home' button.
 
-#### First release
+**Mood History page**
 
+- the user sees a container where they can enter the start date and end date
+- the user can select the calender icons to choose dates. 
+- the button 'Mood History' will link to their mood history. 
+- the user will see their mood history displayed on the screen. 
 
-
-**Main fetures:**
-
-
-4.
 
 ##### Reported Issues on Mobile Devices
 
@@ -467,6 +466,7 @@ Manual testing of all buttons, links, functionality and grammer on the website h
 4. Save button on Tell a Joke needs styling
 5. Content too close to nav bar on Time for a Joke page
 6. Styling on Time for a Joke after submission
+7. Can't see mood history fully. 
 
 
 ## Project Bugs and Solutions:
