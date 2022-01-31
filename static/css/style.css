@@ -193,14 +193,14 @@ form label {
 
 /* Back-to-Top button */
 .btt-button {
-    height: 42px;
-    width: 42px;
+    height: 28px;
+    width: 28px;
     border: 2px solid var(--blue);
     border-radius: 50%;
     background: var(--coral);
     position: fixed;
-    bottom: 10px;
-    right: 5px;
+    bottom: 2px;
+    right: 2px;
     color: var(--blue);
     z-index: 999;
 }
@@ -366,7 +366,6 @@ img.head-image-bottom {
   .grid{
     display:flex;
     flex-wrap: wrap;
-    height:400px;
     width:400px;
   }
 
