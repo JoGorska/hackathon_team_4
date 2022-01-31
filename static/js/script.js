@@ -3,13 +3,30 @@ $(document).ready(function () {
 
   $("#id-start-date").on('change', function () {
     var selectedDate = new Date($(this).val());
-    var selectDateMilli = Math.floor(selectedDate.getTime()/ 1000)
+    Math.floor(selectedDate.getTime()/ 1000)
 
     var todaysDay = new Date();
-    var todayDateMilli = Math.floor(todaysDay.getTime()/ 1000)
+    Math.floor(todaysDay.getTime()/ 1000)
 
     if (selectedDate > todaysDay) {
         alert("Start date must not be greater than today's date");
+        $(this).val('');
+    }  
+  })
+});
+
+//end date picker - checks if date is in the future.
+$(document).ready(function () {
+
+  $("#id-end-date").on('change', function () {
+    var selectedDate = new Date($(this).val());
+    Math.floor(selectedDate.getTime()/ 1000)
+
+    var todaysDay = new Date();
+    Math.floor(todaysDay.getTime()/ 1000)
+
+    if (selectedDate > todaysDay) {
+        alert("End date must not be greater than today's date");
         $(this).val('');
     }  
   })
