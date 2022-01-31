@@ -26,9 +26,11 @@
                             <li>Check in with others, pick up the phone and have a chat!  How often do we do that now?</li>
                         </ol>
                     </div>
+                    {% if user.is_authenticated %}
                     <div class="col-12 tips mt-5">
-                        <a href="{% url 'add_jocke' %}" class="btn btn-lg btn-secondary" aria-label="go to jockes list page (opens in the same window)">Tell a Jocke</a>
+                        <a href="{% url 'add_jocke' %}" class="btn btn-lg btn-secondary" aria-label="go to jockes list page (opens in the same window)">Tell a Joke</a>
                     </div>
+                    {% endif %}
                     <div class="col-12 tips">
                         {% include 'partials/jockes_list_small.html' %}
                     </div>

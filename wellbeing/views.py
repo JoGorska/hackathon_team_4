@@ -71,3 +71,26 @@ class ClickMood(CreateView):
             return render(request, 'stressed.html')
 
         return HttpResponseRedirect("/")
+
+def get_tired_page(request):
+    """ View to return tired page """
+
+    return render(request, 'tired.html')
+
+
+def get_bored_page(request):
+    """ View to return bored page """
+
+    return render(request, 'bored.html')
+
+
+def get_happy_page(request):
+    """ View to return happy page """
+
+    return render(request, 'happy.html')
+
+
+def get_stressed_page(request):
+    """ View to return stressed page """
+
+    return render(request, 'stressed.html')
