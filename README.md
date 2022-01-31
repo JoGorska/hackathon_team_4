@@ -624,6 +624,16 @@ pip3 install -r requirements.txt
 
 ### People
 
+MyMind'sEye was created by: 
+  [Joanna Gorska](https://github.com/JoGorska)
+  [Nick Chapman](https://github.com/NickChapman1988)
+  [Rachel Rock](https://github.com/rockymiss)
+  [Conor Gorman](https://github.com/CGPlusPlus)
+  [Lydia Wright](https://github.com/lmw95)
 
+  A big thank you to: 
+- [Iryna Sanzhara](LinkedIn) for mentoring and encouragement
+- The Slack Community
+- Youi Lavi, Maria Kuzak, Natalia Obregon and Megan Wood for their very insightful webinar on Accelerating the future of workforce well-being and mindfulness. 
 
 
