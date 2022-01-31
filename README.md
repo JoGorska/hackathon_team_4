@@ -43,8 +43,11 @@
 
 
 
+![alt text](static/media/readme/my-mind-logo.png)
 
-# NameUnspecified
+
+
+# MyMind'sEYE
 
 [![showpiece home page](link/to/img)](https://self-care-app-hackathon.herokuapp.com/)
 
