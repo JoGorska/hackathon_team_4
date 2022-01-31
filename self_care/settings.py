@@ -41,7 +41,7 @@ DEBUG = development
 
 if development:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000',
-    'self-care-app-hackathon.herokuapp.com']
+                     'self-care-app-hackathon.herokuapp.com']
 else:
     ALLOWED_HOSTS = ["self-care-app-hackathon.herokuapp.com"]
 
@@ -55,10 +55,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',
+
     'django.contrib.staticfiles',
     "django_forms_bootstrap",
-
+    'cloudinary_storage',
     'cloudinary',
 
     'user_account',
