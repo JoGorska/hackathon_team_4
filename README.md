@@ -391,25 +391,73 @@ Automated tests have not been created due to time constrains of the project.
 
 ### Manual tests
 
+Manual testing of all buttons, links, functionality and grammer on the website has been carried out. The following was verified by manual testing:
+
+**Navigation on all pages**
+
+- that clicking the logo on the nav bar of each page will bring the user back to the home page/index page.
+- that the users name with a welcome note appears on the nav bar.  
+- that the user can log-out using the link on the nav bar. 
+- that all navigation links work smoothly and link to the correct page.
+- that all navigation links are responsive.
+- nav bar remains in position on all pages.
+
+**Registration page**
+
+- Register and log in. **note** *when entering an incorrect password user was unable to register as expected.  Once the password was confirmed correctly user was able to register.* 
+
+**Log-in page**
+
+- the user can log-in using their user name and password. 
+- the user can see a welcome note with their first name on the nav bar.
+
+**Home page/Emotions**
+
+- the user can see four emotions are displayed and are responsive. 
+- the user can select the tired emotion and link to that page. 
+- the user can select the bored emotion and link to that page. 
+- the user can select the happy emotion and link to that page. 
+- the user can stressed emotion and link to that page. 
+
+**Tired/Sleep Page**
+
+- the user can see a container on the page with an introduction to sleep, tips on sleeping and an accordian of information on how to do the 4-7-8 Sleep technique. 
+- the user can go back to the home by clicking on the 'Back to Home' button.
+
+**Bored Page**
+
+- the user can see a container on the page with an introduction to boredom, tips on managing boredom and a game.
+- the user can play a game and do the following: 
+  - start the game by clicking on any card
+  - flip the cards over, to reveal a mood image
+  - match 2 of the same Moods by flipping them over consecutively
+  - by selecting 2 unmatched Mood cards will flip them back over
+  - can see a timer counting up to see how long it takes them to complete the game 
+  - can see how many flip of the cards they have made
+  - can reset the game by clickong on 'restart'
+  - when the game has finished the user will see the time and number of attempts displayed
+- the user can go back to the home by clicking on the 'Back to Home' button
+
+**Happy page**
+
+- the user can see a container on the page with an introduction to being happy, tips to keep the happiness going and a link to the tell a joke page
+- the user can go back to the home by clicking on the 'Back to Home' button
+
+**Stressed page**
+
+- the user can see a container on the page with an introduction to stress and accordion of information on how to manage stress in the workplace, for exams and everyday life.  
+- the user will see an image of lungs which are animated to breathe in and out for relaxation. 
+- the user can count with the animated lungs to help regulate their breathing 
+- the user can go back to the home by clicking on the 'Back to Home' button.
+
 #### First release
+
+
 
 **Main fetures:**
 
-On desktop the User could: 
 
-
-1. Register and log in. **note** *when entering an incorrect password user was unable to register as expected.  Once the password was confirmed correctly user was able to register.* 
-2. View a welcome note with their name on the nav bar. 
-3. Select the tired emotion and link to that page. 
-4. Select the bored emotion and link to that page. 
-5. Select the happy emotion and link to that page. 
-6. Select the stressed emotion and link to that page. 
-7. Navigate back to the home page by clicking on the logo in the nav bar.  
-8. Log-out using the link on the nav bar. 
-9. Navigate to the Mood History page by clicking the link on the nav bar. 
-10. Navigate to the Jokes page by clicking the link on the nav bar.  
-11.   
-
+4.
 
 ##### Reported Issues on Mobile Devices
 
