@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "django_forms_bootstrap",
+    'cloudinary_storage'
     'cloudinary',
 
     'user_account',
@@ -152,14 +153,14 @@ DEFAULT_FILE_STROAGE = 'cloudinary_sorage.storage.MediaCloudinaryStorage'
 
 STATIC_URL = '/static/'
 
-cloudinary.config(
-    CLOUD_NAME = os.environ.get('CLOUD_NAME'), 
-    API_KEY = os.environ.get('API_KEY'), 
-    API_SECRET = os.environ.get('API_SECRET')
-)
+CLOUDINARY_STORAGE = {
+    "CLOUD_NAME": os.environ.get('CLOUD_NAME'),
+    "API_KEY": os.environ.get('API_KEY'),
+    "API_SECRET": os.environ.get('API_SECRET')
+}
 
 
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+# STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
