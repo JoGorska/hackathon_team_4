@@ -469,7 +469,7 @@ Manual testing of all buttons, links, functionality and grammer on the website h
 4. Save button on Tell a Joke needs styling
 5. Content too close to nav bar on Time for a Joke page
 6. Styling on Time for a Joke after submission
-7. Can't see mood history fully. 
+7. Part of mood history hidden 
 
 
 ## Project Bugs and Solutions:
@@ -624,6 +624,16 @@ pip3 install -r requirements.txt
 
 ### People
 
+MyMind'sEye was created by: 
+  [Joanna Gorska](https://github.com/JoGorska)
+  [Nick Chapman](https://github.com/NickChapman1988)
+  [Rachel Rock](https://github.com/rockymiss)
+  [Conor Gorman](https://github.com/CGPlusPlus)
+  [Lydia Wright](https://github.com/lmw95)
 
+  A big thank you to: 
+- [Iryna Sanzhara](LinkedIn) for mentoring and encouragement
+- The Slack Community
+- Yoni Lavi, Maria Kuzak, Natalia Obregon and Megan Wood for their very insightful webinar on Accelerating the future of workforce well-being and mindfulness. 
 
 
