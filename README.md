@@ -130,7 +130,7 @@ The footer contains minimal information about the authors of the website and sta
 
 ### hero-image 
 
-The hero-image is a person with arms outstretched on a beach in a yopa pose and features on all pages of the website.  
+The hero-image is a person with arms outstretched on a beach in a yopa pose and features on all pages of the website.  The image was chosen because it compliments the theme of the website.  
 
 ### Registration Page
 
@@ -359,7 +359,7 @@ Initialy it was returning errors in relation of ES6 syntax, which was resolved b
 
 
 ### Python beautify
-All pages were initialy put through [Python Formatter](https://codebeautify.org/python-formatter-beautifier) which automaticaly sorted most of the too long lines errors. Than the code was checked by pylint and problems were displayed in the console. Once the issues were cleared I have put all code though pep8 validator.
+All pages were initialy put through [Python Formatter](https://codebeautify.org/python-formatter-beautifier) which automaticaly sorted most of the too long lines errors. Then the code was checked by pylint and problems were displayed in the console. Once the issues were cleared I have put all code though pep8 validator.
 
 ### Python validator
 
@@ -393,10 +393,32 @@ Automated tests have not been created due to time constrains of the project.
 
 #### First release
 
-**Release main fetures:**
+**Main fetures:**
 
-llll
+On desktop the User could: 
 
+
+1. Register and log in. **note** *when entering an incorrect password user was unable to register as expected.  Once the password was confirmed correctly user was able to register.* 
+2. View a welcome note with their name on the nav bar. 
+3. Select the tired emotion and link to that page. 
+4. Select the bored emotion and link to that page. 
+5. Select the happy emotion and link to that page. 
+6. Select the stressed emotion and link to that page. 
+7. Navigate back to the home page by clicking on the logo in the nav bar.  
+8. Log-out using the link on the nav bar. 
+9. Navigate to the Mood History page by clicking the link on the nav bar. 
+10. Navigate to the Jokes page by clicking the link on the nav bar.  
+11.   
+
+
+##### Reported Issues on Mobile Devices
+
+1. Game not centered on happy page and footer not in place
+2. Content spaced too far from nav bar
+3. Alignment of text not centered on Tell a Joke page
+4. Save button on Tell a Joke needs styling
+5. Content too close to nav bar on Time for a Joke page
+6. Styling on Time for a Joke after submission
 
 
 ## Project Bugs and Solutions:
