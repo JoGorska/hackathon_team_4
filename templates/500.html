@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap_tags %}
+{% block content %}
+
+<div>
+    <div class="page-overlay d-flex justify-content-center align-items-center">
+        <div class="container options-container p-5">
+        <div id="text-404">
+            <h1>500 Error - Page not found</h1>
+            <p>The page you are looking for does not exist!<br> Take a breath, and let's try again.<br> Click <a href="{% url 'home' %}" class="text-decoration-none fw-bold">here</a> to be brought to the Home page. </p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+{% endblock %}

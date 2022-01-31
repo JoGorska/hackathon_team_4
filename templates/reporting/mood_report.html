@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+{% if user.is_authenticated %}
 <!-- icon for checked mark -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="check" viewBox="0 0 16 16">
@@ -78,4 +79,10 @@
     </div>
   </div>
 </div>
+
+{% else %}
+
+{% include 'partials/not_authenticated.html' %}
+{% endif %}
+
 {% endblock %}
