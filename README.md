@@ -113,11 +113,9 @@ Wireframes final version can be found [here](/workspace/hackathon_team_4/static/
 
 ### Agile Methodology
 
-![Screenshot of the canban board](im/here)(link-to/canba)
+![Screenshot of the canban board](/workspace/hackathon_team_4/static/media/readme/canban-board.pdf)
 
-Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](https://github.com/JoGorska/mileage-tracker/projects/1). The issues are currently in two categories - done or for the next release. 
-
-The issues were than closed automaticaly when the pull request was linked to the issue. 
+Github issues were used to assist with creating user stories. The issues are currently in four categories - to do, in progress, on hold or done.  
 
 ## Existing Features
 ------
@@ -150,17 +148,17 @@ As like all pages the home page contains the hero-image of the person on the bea
 
 All emotion pages give an introduction to that emotion and tips for that emotion.  Each page also contain a 'back to home' link so the user can easily return to the homepage.  
 
-  #### Sleep 
-    If the user chooses 'tired' as their emotion they are directed to the sleep page.  The sleep page gives an introduction to the importance of sleep, tips on how to sleep better and features a technique used on how to fall asleep.  It is explained what the technique is, how it works and how it is done.  The technique is laid out using a bootstrap accordian.  The accordian means that the page is not completely overtaken by information and the user can choose to open it as they wish.    
+#### Sleep 
+  If the user chooses 'tired' as their emotion they are directed to the sleep page.  The sleep page gives an introduction to the importance of sleep, tips on how to sleep better and features a technique used on how to fall asleep.  It is explained what the technique is, how it works and how it is done.  The technique is laid out using a bootstrap accordian.  The accordian means that the page is not completely overtaken by information and the user can choose to open it as they wish.    
 
-  #### Boredom 
-    If the user chooses 'bored' as their emotion they are directed to the boredom page.  This gives and introduction to embrace boredom and tips on how to deal with boredom.  This page also features a game called Eye Match, again keeping in with the theme of the website.  The came is a simple memory match game where the user matches cards in the fastest time possible.  The user can reset the game and play again if they wish.  Memory games, while simple in nature, are very effective in improving cognitive function, memory and focus. 
+#### Boredom 
+  If the user chooses 'bored' as their emotion they are directed to the boredom page.  This gives and introduction to embrace boredom and tips on how to deal with boredom.  This page also features a game called Eye Match, again keeping in with the theme of the website.  The came is a simple memory match game where the user matches cards in the fastest time possible.  The user can reset the game and play again if they wish.  Memory games, while simple in nature, are very effective in improving cognitive function, memory and focus. 
 
-  #### Happy
-    If the user chooses 'happy' as their emotion they are directed to the happy page.  This gives and introduction to happyness and tips to keep that happiness going.
+#### Happy
+  If the user chooses 'happy' as their emotion they are directed to the happy page.  This gives and introduction to happyness and tips to keep that happiness going.
 
-  #### Stressed
-    If the user chooses 'stressed' as their emotion they are directed to the stressed page.  This page gives an introduction to stress and tips to manage stress.  The stress page also features a bootstrap accordion which gives information on tips to manage workplace stress, exam stress and everyday stress. 
+#### Stressed
+  If the user chooses 'stressed' as their emotion they are directed to the stressed page.  This page gives an introduction to stress and tips to manage stress.  The stress page also features a bootstrap accordion which gives information on tips to manage workplace stress, exam stress and everyday stress. 
 
 
 ## Future Features 
@@ -541,8 +539,6 @@ pip3 install -r requirements.txt
 * [Stack Overflow](https://stackoverflow.com)
 
 ### Tutorials and inspiration
-
-* The project walkthrough I Think Therefore I Blog tutorial provided instpiration for traffic alerts the repository can be found [here](https://github.com/Code-Institute-Solutions/Django3blog/blob/master/12_final_deployment/blog/views.py)
 
 * The Sleep Technique was found on the website [healthline.ie](https://www.healthline.com/health/4-7-8-breathing#How-to-do-it-)
 
