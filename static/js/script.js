@@ -1,8 +1,6 @@
-
-//function to check date inputs on mood history
+//start date picker - checks if date is in the future.
 $(document).ready(function () {
 
-  //start date picker - checks if date is in the future.
   $("#id-start-date").on('change', function () {
     var selectedDate = new Date($(this).val());
     var selectDateMilli = Math.floor(selectedDate.getTime()/ 1000)
@@ -13,12 +11,10 @@ $(document).ready(function () {
     if (selectedDate > todaysDay) {
         alert("Start date must not be greater than today's date");
         $(this).val('');
-    }
-
-    // end date picker - checks if end date is before start date
-  
-})
+    }  
+  })
 });
+
 
 $(document).ready(function () {
 
