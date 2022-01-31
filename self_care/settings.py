@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 if os.path.isfile("env.py"):
     import env
@@ -52,7 +55,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',
     'django.contrib.staticfiles',
     "django_forms_bootstrap",
     'cloudinary',
@@ -150,16 +152,16 @@ DEFAULT_FILE_STROAGE = 'cloudinary_sorage.storage.MediaCloudinaryStorage'
 
 STATIC_URL = '/static/'
 
+cloudinary.config(
+    CLOUD_NAME = os.environ.get('CLOUD_NAME'), 
+    API_KEY = os.environ.get('API_KEY'), 
+    API_SECRET = os.environ.get('API_SECRET')
+)
+
+
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
-# MEDIAFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-# MEDIAFILES_DIRS = [os.path.join(BASE_DIR, 'media')]
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
-
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
