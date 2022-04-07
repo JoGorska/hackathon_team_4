@@ -25,29 +25,6 @@ class HomeView(CreateView):
         }
         return render(request, 'index.html', context)
 
-    def post(self, request, *args, **kwargs):
-        form = MoodForm()
-
-
-class PostMood(CreateView):
-    '''
-    view to post mood data from user input
-    '''
-    template_name = 'index.html'
-    form_class = MoodForm
-    success_url = 'home'
-
-    def post(self, request, author_id, *args, **kwargs):
-        mood_form = MoodForm(data=request.POST)
-
-        if mood_form.is_valid():
-            author = get_object_or_404(User, id=author_id)
-            mood_form.instance.author = author
-            mood_instance = mood_form.save()
-        else:
-            mood_form = MoodForm()
-        return HttpResponseRedirect("/")
-
 
 class ClickMood(CreateView):
     '''
@@ -71,6 +48,7 @@ class ClickMood(CreateView):
             return render(request, 'stressed.html')
 
         return HttpResponseRedirect("/")
+
 
 def get_tired_page(request):
     """ View to return tired page """
