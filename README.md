@@ -43,7 +43,7 @@
 
 
 
-![alt text](static/media/readme/my-mind-logo.png)
+![alt text](docs/readme/my-mind-logo.png)
 
 
 
@@ -109,14 +109,13 @@ Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=C
 
 Wireframes design was focused on emotions and letting the user select how they were feeling the day they logged in.  
 
-Wireframes final version can be found [here](/workspace/hackathon_team_4/static/media/readme/wireframes-mymind.pdf)
+Wireframes final version can be found [here](docs/readme/wireframes-mymind.pdf)
 
- 
 
 
 ### Agile Methodology
 
-![Screenshot of the canban board](/workspace/hackathon_team_4/static/media/readme/canban-board.pdf)
+[Screenshot of the canban board](docs/readme/canban-board.pdf)
 
 Github issues were used to assist with creating user stories. The issues are currently in four categories - to do, in progress, on hold or done.  
 
