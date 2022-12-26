@@ -43,15 +43,15 @@
 
 
 
-![alt text](docs/readme/my-mind-logo.png)
+[![alt text](docs/readme/my-mind-logo.png)](https://self-care-hackathon.up.railway.app/)
 
 
 
 # MyMind'sEYE
 
-[![showpiece home page](link/to/img)](https://self-care-app-hackathon.herokuapp.com/)
+[![showpiece home page](link/to/img)](https://self-care-hackathon.up.railway.app/)
 
-Click [here](https://self-care-app-hackathon.herokuapp.com/) to live site.  
+Click [here](https://self-care-hackathon.up.railway.app/) to live site.  
 
 ## UX
 ------
@@ -336,16 +336,9 @@ All emotion pages give an introduction to that emotion and tips for that emotion
 [HTML validator](https://validator.w3.org/nu/#textarea)
 
 
-| Page  |  result
-| ------ | ------ |
-|  [Home](link/to/report |  No errors |
-|  [another page](link/to/file.pdf)|No errors|
-
-
-
 ### CSS validation
 
-[W3C validator](https://jigsaw.w3.org/css-validator/). The copy of the CSS report can be found [here](.....)
+[W3C validator](https://jigsaw.w3.org/css-validator/).
 
 ### JavaScript validation
 Javascript code validation was complited on [jshint](https://jshint.com/)
@@ -353,12 +346,6 @@ Initialy it was returning errors in relation of ES6 syntax, which was resolved b
 ```
 /*jshint esversion: 6*/
 ```
-
-| Page  |  result
-| ------ | ------ |
-|  [script](link to result here /???) |  no errors |
-
-
 
 ### Python beautify
 All pages were initialy put through [Python Formatter](https://codebeautify.org/python-formatter-beautifier) which automaticaly sorted most of the too long lines errors. Then the code was checked by pylint and problems were displayed in the console. Once the issues were cleared I have put all code though pep8 validator.
@@ -379,7 +366,7 @@ Pylint was used to verify Python code. Any errors were corrected and re-run unti
 
 *R0201* (no-self-use) error ignored for reporting.views and jocking.views
 
-See [Pylint Validation Reports](media/validation/python).
+See [Pylint Validation Reports](docs/validation/python).
 
 ## Tests
 ------

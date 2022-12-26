@@ -38,13 +38,12 @@ SECRET_KEY = env('SECRET_KEY')
 DEVELOPMENT = env('DEVELOPMENT') if 'DEVELOPMENT' in os.environ else False
 
 DEBUG = DEVELOPMENT
-ALLOWED_HOSTS = ['*']
 
 
-# if DEVELOPMENT:
-#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'self-care-hackathon.up.railway.app']
-# else:
-#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'self-care-hackathon.up.railway.app']
+if DEVELOPMENT:
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'self-care-hackathon.up.railway.app']
+else:
+    ALLOWED_HOSTS = ['self-care-hackathon.up.railway.app']
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
