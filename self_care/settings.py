@@ -38,11 +38,11 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-development = env('DEVELOPMENT', False)
+DEVELOPMENT = env('DEVELOPMENT') if 'DEVELOPMENT' in os.environ else False
 
-DEBUG = development
+DEBUG = DEVELOPMENT
 
-if development:
+if DEVELOPMENT:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000',
                      'self-care-hackathon.up.railway.app']
 else:
