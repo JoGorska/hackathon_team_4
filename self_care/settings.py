@@ -46,7 +46,8 @@ if DEVELOPMENT:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000',
                      'self-care-hackathon.up.railway.app']
 else:
-    ALLOWED_HOSTS = ['self-care-hackathon.up.railway.app']
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000',
+                     'self-care-hackathon.up.railway.app']
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
