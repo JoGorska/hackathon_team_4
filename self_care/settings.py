@@ -13,15 +13,15 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
 
-if os.path.isfile("env.py"):
-    import env
+import environ
+
+
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
@@ -31,19 +31,19 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-development = os.environ.get('DEVELOPMENT', False)
+DEVELOPMENT = env('DEVELOPMENT') if 'DEVELOPMENT' in os.environ else False
 
-DEBUG = development
+DEBUG = DEVELOPMENT
 
-if development:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000',
-                     'self-care-app-hackathon.herokuapp.com']
+
+if DEVELOPMENT:
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', 'self-care-hackathon.up.railway.app']
 else:
-    ALLOWED_HOSTS = ["self-care-app-hackathon.herokuapp.com"]
+    ALLOWED_HOSTS = ['self-care-hackathon.up.railway.app']
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -107,10 +107,20 @@ WSGI_APPLICATION = 'self_care.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-DATABASES = {
-    'default':
-    dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
+if 'DATABASE_URL' in os.environ:
+
+    DATABASES = {
+        'default': dj_database_url.parse(env("DATABASE_URL"))
+    }
+
+else:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
@@ -154,12 +164,12 @@ DEFAULT_FILE_STROAGE = 'cloudinary_sorage.storage.MediaCloudinaryStorage'
 
 STATIC_URL = '/static/'
 
-CLOUDINARY_URL = os.environ.get('CLOUDINARY_URL')
+CLOUDINARY_URL = env('CLOUDINARY_URL')
 
 CLOUDINARY_STORAGE = {
-    "CLOUD_NAME": os.environ.get('CLOUD_NAME'),
-    "API_KEY": os.environ.get('API_KEY'),
-    "API_SECRET": os.environ.get('API_SECRET')
+    "CLOUD_NAME": env('CLOUD_NAME'),
+    "API_KEY": env('API_KEY'),
+    "API_SECRET": env('API_SECRET')
 }
 
 
